@@ -21,20 +21,20 @@ $(document).ready(function(e) {
         var fn = this.className.split(' ')[1];
         data04[fn]();
     });
-    var unslider04 = $('.zyxbulid7').unslider({
+    var unslider07 = $('.zyxbulid7').unslider({
         dots: true,
         speed:500
     }),
-data04 = unslider04.data('unslider');
-$('.zyxdish-name').mousemove(function(event) {
-    $(this).fadeIn();
-    $(this).next().fadeOut();
-});
-$('.zyx-buy').mouseleave(function(event) {
-    /* Act on the event */
-   //$(this).hide();
-   $(this).fadeOut();
-   $(this).prev().fadeIn();
-});
+    data07 = unslider07.data('unslider');
+    $('.zyxdish-name').mousemove(function(event) {
+        $(this).fadeIn();
+        $(this).next().fadeOut();
+    });
+    $('.zyx-buy').mouseleave(function(event) {
+        /* Act on the event */
+       //$(this).hide();
+       $(this).fadeOut();
+       $(this).prev().fadeIn();
+    });
 
 });
