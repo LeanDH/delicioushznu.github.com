@@ -81,13 +81,13 @@
 	line-height:26px;
 }
 .process_red_left{
-	background-image:url(taobao_bg.png);
+	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:-12px -92px;
 	width:3px;
 }
 .process_gray_left{
-	background-image:url(taobao_bg.png);
+	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:-12px -92px;
 	width:3px;
@@ -102,7 +102,7 @@
 }
 .process_red_arrow{
 	background-color:#ff6600;
-	background-image:url(taobao_bg.png);
+	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 	width:13px;
@@ -116,13 +116,13 @@
 }
 .process_gray_arrow{
 	background-color:#e4e4e4;
-	background-image:url(taobao_bg.png);
+	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 	width:13px;
 }
 .process_gray_right{
-	background-image:url(taobao_bg.png);
+	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:-12px -138px;
 	width:3px;
