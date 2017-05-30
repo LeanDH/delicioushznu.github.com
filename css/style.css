@@ -1,6 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-image: url(../img/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*background-size: 100% 100%;*/
 }
 div {
 	padding: 0px;
@@ -8,7 +12,8 @@ div {
 .topbox {
 	width: 100%;
 	height: 500px;
-	background-color: white;
+	/*background-color:  #FDFFDF;*/
+	/*background-color:  #FFFCF0;*/
 }
 .zyx-nav {
 	display: flex;
@@ -16,7 +21,9 @@ div {
 	flex-wrap: nowrap;
 	width:100%;
 	height: 60px;
-	background: #F5F5F5;
+	/*background: #F17C67;*/
+	/*background: #EB3F2F;*/
+	/*background: #Ecf3f6;*/
 	cursor: pointer;
 }
 .zyx-nav-cnt {
@@ -32,12 +39,13 @@ div {
 	width: 100px;
 }
 .words{
-	color: black;
+	color: #EB3F2F;
+	font-weight: bold;
 	line-height: 60px;
 	text-decoration: none;
 }
 .words:hover {
-	color:#FF4200;
+	color:black;
 }
 .zyx-nav-search {
 	box-sizing: border-box;
@@ -45,21 +53,24 @@ div {
 	height: 30px;
 	margin:0px;
 	margin-top:13px;
-	border: 2px solid #FF4200;
+	border: 2px solid #EB3F2F;
 }
 .zyx-nav-button {
 	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
-	top:4px;
+	top:2px;
 	width: 100px;
 	height: 30px;
 	margin:0px;
 	margin-top: 13px;
-	border: 2px solid #ff4200;
+	border: 2px solid #EB3F2F;
+	line-height: 26px;
 	text-align: center;
-	line-height: 30px;
-	background-color: #FF4200;
+    color:white;
+	/*background-color: #FF4200;*/
+	/*background-color: #f15c5c;*/
+	background-color: #ff2c00;
 }
 .zyx-nav-button:hover {
 	border: 2px solid red;
@@ -124,12 +135,14 @@ div {
 	left: 20px;
 }
 .zyx-nav-shopcar {
-	background-color: #EF4200;
 	width: 150px;
-	color: white;
+	height: 30px;
+	color: #EB3F2F;
+	font-weight: bold;
 	text-align: center;
 	line-height: 60px;
 	font-size: 18px;
+/*	background-color: #EB3F2F;*/
 }
 .zyxtopbox-main {
 	display: flex;
@@ -154,7 +167,7 @@ div {
 	height: 430px;
 	margin-top: 5px;
 	margin-left: 10px;
-	background-color: #F5F5F5;
+	background-color: #dcedc8;
 }
 .zyxnote-head ,
 .zyxnote-cnt,
@@ -166,7 +179,7 @@ div {
 	line-height: 60px;
 	text-align: center;
 	z-index: 0;
-	color: black;
+	color: #EB3F2F;
 }
 .zyxnote-head:hover,.zyxnote-head1 {
 	height: 70px;
@@ -186,7 +199,7 @@ div {
 	width: 333px;
 	height:370px;
 	z-index: 9999;
-	background-color: #F5F5F5;
+	background-color: #dcedc8;
 	top:-5px;
 }
 .zyxnote-cnt1 {
@@ -268,7 +281,7 @@ li {
 	width:100%;
 	height:60px;
 	z-index: 999;
-	background-color: #F5F5F5;
+	/*background-color: #F5F5F5;*/
 }
 .zyx-nav-fix {
 	position: fixed;
@@ -304,13 +317,16 @@ li {
 }
 .zyx-dirnav-cnt ul li a {
 	text-decoration: none;
-	color: black;
+	color:white;
+	font-weight: bold;
+
 }
 .zyx-dirnav-cnt ul li a:hover {
 	color:#ef4200;
 }
 .zyx-dirnav-cnt ul li:hover {
-	background-color: gray;
+	background: rgba(128,232,0,0.8);
+	/*background-color: #80e800;*/
 }
 .zyxmain {
 	width: 1000px;
