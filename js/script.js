@@ -26,15 +26,20 @@ $(document).ready(function(e) {
         speed:500
     }),
     data07 = unslider07.data('unslider');
-    $('.zyxdish-name').mousemove(function(event) {
-        $(this).fadeIn();
-        $(this).next().fadeOut();
+    $('.zyxdish-name').mouseover(function(event) {
+        $(this).fadeOut('fast',function(){$(this).next().fadeIn();});
     });
-    $('.zyx-buy').mouseleave(function(event) {
+    $('.zyx-buy').mouseout(function(event) {
         /* Act on the event */
        //$(this).hide();
-       $(this).fadeOut();
-       $(this).prev().fadeIn();
+       $(this).fadeOut('fast',function(){$(this).prev().fadeIn();});
     });
-
+    var unslider02 = $('.zyxbuild2').unslider({
+        dots: false
+    }),
+    data02 = unslider02.data('unslider');
+    $('.unslider-arrow02').click(function() {
+            var fn = this.className.split(' ')[1];
+            data02[fn]();
+    });
 });
