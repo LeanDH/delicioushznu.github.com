@@ -1,0 +1,201 @@
+.part1 {
+    display: flex;
+    flex-direction: column;
+}
+.part2createnew{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.part3push {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.guide {
+    height:80px;
+    width: 100%;
+    border:1px solid #000;
+    text-align: center;
+    line-height: 80px;
+}
+.total {
+    width: 80%;
+    margin-left:10%;
+    margin-top: 20px;
+    height: 100%;
+}
+.title {
+    height: 100px;
+    border:1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.createnew {
+    width:100px;
+    height: 25px;
+    font-size: 15px;
+    color: #fff;
+    background: #FF6767;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+.element {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.headimg {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.headimage {
+    height: 70px;
+    width: 70px;
+    /*border: 1px solid #000;*/
+}
+.message {
+    width: 90%;
+    /*border:1px solid #000;*/
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.talktitle {
+    font-weight: bold;
+}
+.talkmessage {
+    height: 100px;
+    width: 100%;
+    /*border:1px solid #000;*/
+    display: flex;
+}
+.self {
+    width:80%;
+}
+.other {
+    width: 100%;
+    height: 100px;
+    /*border:1px solid #000;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.othertalk {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    /*border-right: 1px solid #000;*/
+}
+.push {
+    height: 100px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pushbutton {
+    width:50px;
+    height: 25px;
+    font-size: 15px;
+    color: #fff;
+    background: #FF6767;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+.message-good {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message>div {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+.pagebox {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2-title {
+    width: 75%;
+    height: 140px;
+    margin-top: 70px;
+}
+.selftitle {
+    width: 100%;
+    height: 80px;
+    border:1px solid #000;
+    font-size: 18px;
+    /*word-break:break-all;*/
+    /*overflow-x:scroll;*/
+}
+.part2-self,.part3-self {
+    width: 75%;
+    height: 250px;
+    font-size: 20px;
+}
+.part2-self-ju , .part3-self-ju{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    font-size: 20px;
+}
+.part2createnew p {
+    font-size: 20px;
+}
+.twobutton {
+    display: flex;
+    width: 75%;
+    height: 100px;
+    justify-content: flex-end;
+}
+.nobutton,.yesbutton,.part3nobutton, .part3yesbutton {
+    width:85px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #FF6767;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/*.blur {*/
+    /*filter: url(blur.svg#blur); !* FireFox, Chrome, Opera *!*/
+    /*-webkit-filter: blur(5px); !* Chrome, Opera *!*/
+    /*-moz-filter: blur(5px);*/
+    /*-ms-filter: blur(5px);*/
+    /*filter: blur(5px);*/
+    /*filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); !* IE6~IE9 *!*/
+/*}*/
