@@ -69,7 +69,7 @@
 }
 .message {
     width: 90%;
-    border:1px solid #000;
+    /*border:1px solid #000;*/
 }
 ul.pagination {
     display: inline-block;
