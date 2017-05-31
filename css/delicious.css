@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-05-15 08:44:48
+ * @version $Id$
+ */
+/*.l-titlebox{
+	padding:0 !important;
+	height: 76px;
+	background-color: #fa7e3e;
+}*/
+li {
+	list-style-type: none;
+}
+.l-flexcenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.l-title {
+	height: 76px;
+/*	background-color: #fa7e3e;*/
+/*	background-color: red;*/
+	background-color: white;
+	box-shadow: 0 2px 3px #ccc;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.l-mainbox {
+	padding:0 !important;
+	margin-top: 130px;
+	height: 460px;
+	background-color: white;
+}
+.l-foodpic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	overflow: hidden;
+}
+.l-foodintroduce {
+	height: 100%;
+}
+.l-foodbase {
+	height: 111px;
+	border-bottom: 1px solid #eee;
+	padding-left: 30px;
+}
+.l-foodname {
+	font-family: SimHei;
+	height: 40px;
+	margin-left: -5px;	
+}
+.l-foodplace {
+	color: #B0B0B0;
+}
+.l-foodchoose {
+	height: 259px;
+/*	border-bottom: 1px solid #eee;*/
+}
+.l-foodchoose-box {
+	height: 33%;
+	display: flex;
+/*	justify-content: center;*/
+/*	align-items: center;*/
+	flex-direction: column;
+/*	border-bottom: 1px solid #ccc;*/
+}
+.l-foodchoose-hot {
+	display: flex;
+}
+.l-foodchoose-font {
+	height: 30px;
+	font-size: 17px;
+	color: #616161;
+	text-align: 30px;
+}
+.l-foodchoose-hotchoose {
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	height: 38px;
+	border: 1px solid #ccc;
+	margin-right: 8px;
+	float: left;
+	cursor: pointer;
+}
+.l-foodchoose-hotchoose:hover {
+	/*border: 1px solid #FF8A3B;*/
+	border: 1px solid red;
+}
+.l-foodchoose-amount {
+	height: 40px;
+	display: flex;
+	padding-left: 15px;
+	color: #333;
+	font-size: 20px;
+}
+.l-foodchoose-amount-reduce {
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.l-foodchoose-amount-number {
+	height: 40px;
+	width: 50px;
+	margin-right: 10px;
+	border: 1px solid #ccc;	
+}
+.l-foodchoose-amount-increase {
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.l-foodbuy {
+	height: 70px;
+	padding-left: 15px;
+	display: flex;
+	align-items: center;
+}
+.l-foodtot {
+	color: red;
+	font-weight: 800;
+	font-size: 30px;
+}
+.l-foodtot:before {
+	content: "总价：";
+	color: red;
+	font-weight: 800;
+	font-size: 30px;
+}
+.l-foodtot:after {
+	content: " 元";
+	color: red;
+	font-weight: 800;
+	font-size: 28px;
+}
+.l-foodshop {
+	background-color: red;
+	height: 55px;
+	color: white;
+	font-size: 17px;
+	font-weight: 400;
+}
+.l-foodshop:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+
+.l-comment {
+	padding: 0 !important;
+	margin-top: 30px;
+	height: 700px;
+	background-color: white;
+}
+.l-comment-title {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	color: white;
+/*	background-color: red;*/
+	background-color: #c40000;
+	font-weight: 600;
+	font-size: 20px;
+}
+.l-comment-titlebox {
+	height: 150px;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+.l-comment-scorebox {
+	height: 85%;
+	flex-direction: column;
+	border-right: 1px solid #ccc;
+}
+.l-comment-score {
+	font-size: 50px;
+	font-weight: 800;
+	color: #c40000;
+}
+.l-comment-star {
+	font-size: 30px;
+	display: flex;
+	color: orange;	
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(orange), to(#fa7e3e));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.l-comment-mainbox {
+	padding: 0 !important;
+}
+.l-comment-hottitle {
+	font-family: Microsoft YaHei;
+	padding-top: 12px;
+	font-size: 17px;
+	height: 80px;
+	background-color: #ccc;
+	text-align-last: 80px;
+	font-weight: 600;
+}
+.l-comment-newtitle {
+	font-family: Microsoft YaHei;
+	padding-top: 12px;	
+	font-size: 17px;
+	height: 80px;
+	background-color: #ccc;
+	text-align-last: 80px;
+	margin-right: -30px;
+	font-weight: 600;	
+}
+.l-comment-hotbox {
+	padding-left: 0 !important;
+}
+.l-commentbox {
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+.l-name {
+	font-size: 15px;
+	padding-top: 10px;
+	height: 40px;
+	color: #9E7E73;
+	border-bottom: 1px solid #bfbfbf;
+}
+.l-love {
+	padding-top: 10px;
+	display: flex;
+	font-size: 15px;
+	height: 40px;
+}
+.l-heart:hover {
+	color: red;
+	cursor: pointer;
+/*	opacity: 0;*/
+/*	border: 1px solid #ccc;*/
+}
+.l-loveamount {
+	margin-left: 5px;
+}
+.l-cnt {
+	height: 70px;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+.l-replay {
+	height: 30px;
+	width: 100%;
+	border: 1px solid #c6bebe;
+}
+.l-replaybtn {
+	height: 30px;
+	border: 1px solid #c6bebe;
+	cursor: pointer;
+}
+.l-replaybox {
+	font-family: "微软雅黑";
+	color: #a5a5a5;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.l-comment-newbox {
+	padding-right: 0 !important;
+	border:1px solid #ccc;
+	margin-bottom: 15px;
+}
