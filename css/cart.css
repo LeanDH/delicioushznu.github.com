@@ -149,7 +149,17 @@
 	margin:0;
 	height: 500px;
 }
-.detail,.detail-delete{
+.detail{
+	height: 150px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	background-color:#e2f2ff;
+	border-bottom:solid 1px #d1ecff;
+	border-top:solid 1px #d1ecff;
+	border-right:solid 1px #FFF;
+}
+.detail-delete{
 	height: 150px;
 	display: flex;
 	align-items: center;
