@@ -1,10 +1,11 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: #d2f1de;
 	background-image: url(../img/bg1.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
-	/*background-size: 100% 100%;*/
+	background-size: 100% 1200px;
 }
 div {
 	padding: 0px;
@@ -287,7 +288,11 @@ li {
 	position: fixed;
 	top:0;
 	left:0;
-	background-color: lightgray;
+	/*background-color: lightgray;*/
+	background-color: white;
+}
+.zyx-nav-fix .zyx-dirnav-cnt ul li a{
+	color: black;
 }
 .zyx-nav-clearfix {
 	position: relative;
