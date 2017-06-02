@@ -4,35 +4,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>首页</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/unslider.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
 </head>
-<body>
+<body onload="Toloadbody()">
         <div class="topbox">
         	<div class="zyx-nav">
         		<ul class="zyx-nav-cnt">
-        			<li class="zyx-nav-user">
-     					<a class="words" href="#" >登录</a>
-     					<div class="zyx-nav-userinf">
-     						<div class="zyx-nav-userimg"></div>
-     						<span class="zyx-nav-userload"><a>登录</a></span>
-     						<p>你有X张优惠券</p>
-     						<a class="zyx-nav-userlink" href="#">用户中心</a>
-     					</div>
+        			<li class="zyx-nav-user" id="AAAAAAAA">
+     					<a class="words" href="log.html">登录</a>
+     			        <div class="zyx-nav-userinf">
+                            <div class="zyx-nav-userimg"></div>
+                            <div class="zyx-nav-userload"><a></a></div>
+                            <p>登录以后更加美好</p>
+                            <a class="zyx-nav-userlink" href="#"> 用户</a>
+                        </div>
         			</li>
         			<li class="zyx-nav-sign">
-        				<a class="words" href="#"> 注册</a>
-        			</li>
-        			<li class="blank">
+        				
         			</li>
         			<li>
         				<form>
-        				<input type="text" name="zyx-nav-search" class="zyx-nav-search"><span  name="zyx-nav-button" class="zyx-nav-button">搜索</span>
+        				<input type="text" name="zyx-nav-search" class="zyx-nav-search">
+                        <span  name="zyx-nav-button" class="zyx-nav-button">搜索</span>
         				</form>
-        			</li>
-        			<li class="blank">
         			</li>
         			<li class="zyx-nav-shopcar">
         				<a>购物车<i></i></a>
@@ -40,7 +33,6 @@
         		</ul>
         	</div>
         	<div class="zyxtopbox-main">
-        		<!-轮播图插件-->
 	        	<div class="banner" id="b04">
 				    <ul>
 				        <li><a><img src="img/01.jpg" ></a></li>
@@ -54,7 +46,10 @@
 				</div>
 	        	<div class="zyxtopbox-main-note">
 	        		<div class="zyxnote-head">温馨提示
-		        		<div class="zyxnote-cnt">XXX	
+		        		<div class="zyxnote-cnt">	
+                            若有遗失可以在食堂失物招领处领取
+                            <br>
+                            <span class="weather"></span>
 		        		</div>
 	        		</div>
 	        		<div class="zyxnote-head1">快捷入口
@@ -67,24 +62,29 @@
 	        				</ul>	
 		        		</div>
 	        		</div>
-	        		<img src="img/01.jpg" width="100px" height="100px">
+	        		<div class="logo">
+                        <div class="logo-cnt">
+                            <img src="img/HZNU.png">
+                        </div>
+                        <p class="welcome-cnt">欢迎来到HZNU校园美食</p>
+                    </div>
 	        	</div>
         	</div>
         </div>
         <div class="zyx-nav-clearfix" id="zyx-dirnav">
         	<div class="zyx-dirnav-cnt">
         	 	<ul>
-        	 		<li><a href="#zyxsec1" >恕园7</a></li>
-        	 		<li><a href="#zyxsec2" >恕园2和清真</a></li>
-        	 		<li><a href="#zyxsec3" >其他和周边</a></li>
-        	 		<li><a href="#zyxsec4" >员工墙</a></li>
-        	 		<li><a href="#zyxsec5" >活动</a></li>
-        	 		<li></li>
+        	 		<li class="zyx-dirnav-cnt1" ><a>恕园7</a></li>
+        	 		<li class="zyx-dirnav-cnt2" ><a>恕园2和清真</a></li>
+        	 		<li class="zyx-dirnav-cnt3" ><a>其他和周边</a></li>
+        	 		<li class="zyx-dirnav-cnt4" ><a>员工墙</a></li>
+        	 		<li class="zyx-dirnav-cnt5" ><a>活动</a></li>
+        	 		<li class="zyx-dirnav-cnt6" ></li>
         	 	</ul>
         	</div>
         </div>
-        <!--The main of index.html-->
         <div class="zyxmain">
+            <div class="totop"></div>
             <div class="zyxbulid7" id="zyxsec1">
             <ul class="zyxbuild7-cont">
                         <li class="zyxbuild7-mor">
@@ -431,4 +431,8 @@
             </div>        
         </div>
 </body>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/unslider.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </html>
