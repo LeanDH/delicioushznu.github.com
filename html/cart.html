@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Examples</title>
+<title>cart</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
@@ -79,7 +79,7 @@
     				<div class="col-xs-1 b-contant-title">操作</div>
     			</div>
     			<div class="row b-contant-shopInfo">食堂1:</div>
-    			<div id="goods">
+    			<div class="goods">
 	    			<div class="product" class="row" id="product1">
 	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
 	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
@@ -88,7 +88,7 @@
 	    				<div class="col-xs-1 detail">4.50</div>
 	    				<div class="col-xs-2 detail">
 	    					<i class="fa fa-minus" onclick="changeNum('num_1','minus')"></i>
-	    					<input id="num_1" value="1" class="num_input" readonly="readonly"/>
+	    					<input id="num_1" value="10" class="num_input" readonly="readonly"/>
 	    					<i class="fa fa-plus" onclick="changeNum('num_1','add')"></i>
 	    				</div>
 	    				<div class="col-xs-1 detail font-special-red"></div>
@@ -109,7 +109,7 @@
 	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
 	    			</div>
 	    			<div class="product" class="row" >
-	    				<div class="col-xs-1 detail"><input id="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
 	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
 	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
 	    				<div class="col-xs-1 detail font-special-black">5</div>
@@ -123,6 +123,113 @@
 	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
 	    			</div>
     			</div>
+
+				<div class="row b-contant-shopInfo">食堂2:</div>
+    			<div class="goods">
+	    			<div class="product" class="row" id="product1">
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
+	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
+	    				<div class="col-xs-1 detail font-special-black">5</div>
+	    				<div class="col-xs-1 detail">4.50</div>
+	    				<div class="col-xs-2 detail">
+	    					<i class="fa fa-minus" onclick="changeNum('num_4','minus')"></i>
+	    					<input id="num_4" value="1" class="num_input" readonly="readonly"/>
+	    					<i class="fa fa-plus" onclick="changeNum('num_4','add')"></i>
+	    				</div>
+	    				<div class="col-xs-1 detail font-special-red"></div>
+	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
+	    			</div>
+	    			<div class="product" class="row" >
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
+	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
+	    				<div class="col-xs-1 detail font-special-black">10</div>
+	    				<div class="col-xs-1 detail">10</div>
+	    				<div class="col-xs-2 detail">
+	    					<i class="fa fa-minus" onclick="changeNum('num_5','minus')"></i>
+	    					<input id="num_5" value="1" class="num_input" readonly="readonly"/>
+	    					<i class="fa fa-plus" onclick="changeNum('num_5','add')"></i>
+	    				</div>
+	    				<div class="col-xs-1 detail font-special-red"></div>
+	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
+	    			</div>
+	    			<div class="product" class="row" >
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
+	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
+	    				<div class="col-xs-1 detail font-special-black">5</div>
+	    				<div class="col-xs-1 detail">4.50</div>
+	    				<div class="col-xs-2 detail">
+	    					<i class="fa fa-minus" onclick="changeNum('num_6','minus')"></i>
+	    					<input id="num_6" value="1" class="num_input" readonly="readonly"/>
+	    					<i class="fa fa-plus" onclick="changeNum('num_6','add')"></i>
+	    				</div>
+	    				<div class="col-xs-1 detail font-special-red"></div>
+	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
+	    			</div>
+	    			<div class="product" class="row" >
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
+	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
+	    				<div class="col-xs-1 detail font-special-black">5</div>
+	    				<div class="col-xs-1 detail">4.50</div>
+	    				<div class="col-xs-2 detail">
+	    					<i class="fa fa-minus" onclick="changeNum('num_7','minus')"></i>
+	    					<input id="num_7" value="1" class="num_input" readonly="readonly"/>
+	    					<i class="fa fa-plus" onclick="changeNum('num_7','add')"></i>
+	    				</div>
+	    				<div class="col-xs-1 detail font-special-red"></div>
+	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
+	    			</div>
+    			</div>
+
+				<div class="row b-contant-shopInfo">食堂3:</div>
+    			<div class="goods">
+	    			<div class="product" class="row" id="product1">
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
+	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
+	    				<div class="col-xs-1 detail font-special-black">5</div>
+	    				<div class="col-xs-1 detail">4.50</div>
+	    				<div class="col-xs-2 detail">
+	    					<i class="fa fa-minus" onclick="changeNum('num_8','minus')"></i>
+	    					<input id="num_8" value="1" class="num_input" readonly="readonly"/>
+	    					<i class="fa fa-plus" onclick="changeNum('num_8','add')"></i>
+	    				</div>
+	    				<div class="col-xs-1 detail font-special-red"></div>
+	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
+	    			</div>
+	    			<div class="product" class="row" >
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
+	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
+	    				<div class="col-xs-1 detail font-special-black">10</div>
+	    				<div class="col-xs-1 detail">10</div>
+	    				<div class="col-xs-2 detail">
+	    					<i class="fa fa-minus" onclick="changeNum('num_9','minus')"></i>
+	    					<input id="num_9" value="1" class="num_input" readonly="readonly"/>
+	    					<i class="fa fa-plus" onclick="changeNum('num_9','add')"></i>
+	    				</div>
+	    				<div class="col-xs-1 detail font-special-red"></div>
+	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
+	    			</div>
+	    			<div class="product" class="row" >
+	    				<div class="col-xs-1 detail"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></div>
+	    				<div class="col-xs-2 detail"><img src="" alt="shopping"/></div>
+	    				<div class="col-xs-3 detail"><a href="#">大排</a></div>
+	    				<div class="col-xs-1 detail font-special-black">5</div>
+	    				<div class="col-xs-1 detail">4.50</div>
+	    				<div class="col-xs-2 detail">
+	    					<i class="fa fa-minus" onclick="changeNum('num_10','minus')"></i>
+	    					<input id="num_10" value="1" class="num_input" readonly="readonly"/>
+	    					<i class="fa fa-plus" onclick="changeNum('num_10','add')"></i>
+	    				</div>
+	    				<div class="col-xs-1 detail font-special-red"></div>
+	    				<div class="col-xs-1 detail-delete"><a href="javascript:deleteRow('product1');">删除</a></div>
+	    			</div>
+    			</div>
+
     		</div>
     	</div>
         <div class="b-bottom">
@@ -134,7 +241,9 @@
 		    </div>
 		    <div class="row">
 		    	<div class="col-xs-11"></div>
-		    	<div class="col-xs-1 b-bottom-commit">提交</div>
+		    	<div class="col-xs-1">
+		    		<div class="b-bottom-commit">提交</div>
+		    	</div>
 		    </div>
 		</div>
     </div>

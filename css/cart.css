@@ -5,18 +5,23 @@
  * @date    2017-05-16 19:44:20
  * @version $Id$
  */
- .b-top{
+ .b-top
+ {
  	height: 60px;
  }
-.shopping{
-    height: 1000px;
+.shopping
+{
+    /*height: 1000px;*/
     width:100%;
     position: absolute;
     z-index: 3;
  }
-.b-title{
+.b-title
+{
 	height:60px;
 	width:100%;
+	top:0;
+	left: 0;
 	display: flex;
 	justify-content: center;
 	position: fixed !important;
@@ -24,19 +29,22 @@
 	box-shadow:10px 0px 10px rgba(0,0,0,0.3);
 	z-index:10;
 }
-.b-title ul{
+.b-title ul
+{
 	height:60px;
 /*	width:990px;*/
 	margin:0px auto;
 }
-.b-title ul li{
+.b-title ul li
+{
 	display:inline-block;
 	vertical-align:top;
 	*display:inline;
 	*zoom:1;
 	height:60px;
 }
-.b-title ul li a.link{
+.b-title ul li a.link
+{
 	display: inline-block;
     vertical-align: top;
     padding: 0px 24px;
@@ -48,7 +56,8 @@
     font-weight: bold;
     position: relative;
 }
-.b-title ul li a.link strong{
+.b-title ul li a.link strong
+{
 	font-weight:bold;
 	display:inline-block;
 	vertical-align:top;
@@ -56,43 +65,51 @@
 	*zoom:1;
 	height:60px;
 }
-.b-title ul li:hover{
+.b-title ul li:hover
+{
 	cursor:pointer;
 	background:#fafafa;
 }
-.b-current{
+.b-current
+{
 	display: inline-block;
     vertical-align: top;
     height: 60px;
 }
-.b-title ul li.b-current a strong{
+.b-title ul li.b-current a strong
+{
 	border-bottom:4px solid #ff3232;
 	height:56px;
 	overflow:hidden;
 }
 
-.b-contant-process{
+.b-contant-process
+{
     height:23px;
 }
-.b-contant-process li{
+.b-contant-process li
+{
 	float:left;
 	height:23px;
 	list-style: none;
 	line-height:26px;
 }
-.process_red_left{
+.process_red_left
+{
 	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:-12px -92px;
 	width:3px;
 }
-.process_gray_left{
+.process_gray_left
+{
 	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:-12px -92px;
 	width:3px;
 }
-.process_red{
+.process_red
+{
 	background-color:#ff6600;
 	text-align:center;
 	font-size:14px;
@@ -100,37 +117,43 @@
 	color:#FFF;
 	width:130px;
 }
-.process_red_arrow{
+.process_red_arrow
+{
 	background-color:#ff6600;
 	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 	width:13px;
 }
-.process_gray{
+.process_gray
+{
 	background-color:#e4e4e4;
 	text-align:center;
 	font-size:14px;
 	font-weight:bold;
 	width:150px;
 }
-.process_gray_arrow{
+.process_gray_arrow
+{
 	background-color:#e4e4e4;
 	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 	width:13px;
 }
-.process_gray_right{
+.process_gray_right
+{
 	background-image:url(../img/taobao_bg.png);
 	background-repeat:no-repeat;
 	background-position:-12px -138px;
 	width:3px;
 }
-.goods-padding{
+.goods-padding
+{
 	padding:15px;
 }
-.b-contant-title{
+.b-contant-title
+{
 	/*text-align:center;*/
 	height: 25px;
 	display: flex;
@@ -138,18 +161,21 @@
     justify-content: center;
 	border-bottom: 3px solid #a7cbff;
 }
-.b-contant-shopInfo{
+.b-contant-shopInfo
+{
 	padding-left:20px;
 	margin:5px 0 5px 0;
 	height:35px;
 	/*vertical-align:bottom;*/
 }
-#goods{
+.goods
+{
 	padding: 0;
 	margin:0;
-	height: 500px;
+	/*height: 500px;*/
 }
-.detail,.detail-delete{
+.detail
+{
 	height: 150px;
 	display: flex;
 	align-items: center;
@@ -159,10 +185,23 @@
 	border-top:solid 1px #d1ecff;
 	border-right:solid 1px #FFF;
 }
-.b-contant-goods table tr{
+.detail-delete
+{
+	height: 150px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	background-color:#e2f2ff;
+	border-bottom:solid 1px #d1ecff;
+	border-top:solid 1px #d1ecff;
+	border-right:solid 1px #FFF;
+}
+.b-contant-goods table tr
+{
 	height: 150px;
 }
-.num_input{
+.num_input
+{
 	text-align:center;
 	margin:20px;
 	width:20px;
@@ -170,15 +209,18 @@
 	background: #e2f2ff;
 	border: 0;
 	}
-.total-price{
+.total-price
+{
 	font-size: 16px;
 	color: red;
 }
-.font-special-black{
+.font-special-black
+{
 	font-weight: bold;
 	font-size: 16px;
 }
-.font-special-red{
+.font-special-red
+{
 	font-weight: bold;
 	font-size: 16px;
 	color:red;
@@ -186,18 +228,28 @@
 /*.product{
 	margin-bottom: 25px;
 }*/
-.b-bottom-commit{
+.b-bottom-commit
+{
+	width:80px;
+	height: 30px;
+	margin-bottom: 10px;
 	font-size: 15px;
-	color: orange;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	color: white;
     font-weight: bold;
+    background-color: red;
 }
-.b-contant-up-main{
+.b-contant-up-main
+{
     position: relative;
     z-index: 5;
     width:100%;
     height: 1000px;
 }
-.main-square{
+.main-square
+{
 	width:600px;
 	height: 500px;
 	position: relative;
