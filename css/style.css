@@ -1,18 +1,18 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #d2f1de;
 	background-image: url(../img/bg1.jpg);
 	background-repeat: no-repeat;
+	background-position: -50px -100px;
 	background-size:cover;
-	background-size: 100% 1200px;
+	/*background-size: 100% 100%;*/
 }
 div {
 	padding: 0px;
 }
 .topbox {
 	width: 100%;
-	height: 500px;
+	height: 605px;
 	/*background-color:  #FDFFDF;*/
 	/*background-color:  #FFFCF0;*/
 }
@@ -28,16 +28,23 @@ div {
 	cursor: pointer;
 }
 .zyx-nav-cnt {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	margin:auto;
 	list-style:none;
 	height: 60px;
+	width: 1000px;
 }
 .zyx-nav-cnt li {
-	float: left;
 	height: 60px;
 }
 .zyx-nav-user {
 	width: 100px;
+	height: 60px;
+}
+.welcome-cnt {
+	font-size: 20px;
 }
 .words{
 	color: #EB3F2F;
@@ -56,11 +63,35 @@ div {
 	margin-top:13px;
 	border: 2px solid #EB3F2F;
 }
+.zyx-nav-search:focus {
+	outline: none
+}
+.logo {
+	margin:auto;
+	padding:10px;
+	width:300px;
+	height:300px;
+	text-align: center;
+	background-color:transparent;
+}
+.logo-cnt {
+	width: 200px;
+	height: 200px;
+	margin:auto;
+	border-radius: 200px;
+	overflow: hidden;
+}
+.logo-cnt img {
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+}
 .zyx-nav-button {
 	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
 	top:2px;
+	left:-5px;
 	width: 100px;
 	height: 30px;
 	margin:0px;
@@ -76,35 +107,24 @@ div {
 .zyx-nav-button:hover {
 	border: 2px solid red;
 }
-.blank {
-	width: 200px;
-	height: 30px;
-}
 .zyx-nav-userinf {
 	display: none;
-	position: relative;
-	left: 0px;
-	width: 250px;
-	height: 130px;
-	z-index: 9999999;
-
-	background-color: #F5F5F5;
-}
-.zyx-nav-user:hover {
-	z-index: 999;
-}
-.zyx-nav-user:hover .zyx-nav-userinf {
-	display: block;
 	position: absolute;
 	top:60px;
+	left: 0px;
+	width: 300px;
+	height: 170px;
+	z-index: 9999999;
+	background-color: #F5F5F5;
 }
 .zyx-nav-sign {
 	margin-left: 5px;
+	width: 100px;
 }
 .zyx-nav-userimg {
 	display: inline-block;
-	width: 80px;
-	height:80px;
+	width: 100px;
+	height:100px;
 	margin: 10px;
 	border-radius: 200px;
 	background-color: #EF4200;
@@ -120,37 +140,44 @@ div {
 	color: black;
 }
 .zyx-nav-userload {
+	display: inline-block;
 	position: relative;
+	width: 40px;
+	height: 20px;
 	top:-80px;
-	left:90px;
+	left:110px;
+	background-color: green;
 }
 .zyx-nav-userinf p {
 	position: relative;
 	top:-64px;
-	left:105px;
+	left:148px;
 	color:#EF4200;
 }
 .zyx-nav-userlink {
 	position: relative;
-	top: -60px;
-	left: 20px;
+	top: -75px;
+	left: 2px;
 }
 .zyx-nav-shopcar {
 	width: 150px;
-	height: 30px;
+	height: 60px;
+	margin-left: 100px;
 	color: #EB3F2F;
 	font-weight: bold;
 	text-align: center;
 	line-height: 60px;
 	font-size: 18px;
+
 /*	background-color: #EB3F2F;*/
 }
 .zyxtopbox-main {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	align-items: center;
 	width: 1010px;
-	height: 440px;
+	height: 540px;
 	margin:auto;
 	z-index: -1;
 	background-color: transparent;
@@ -170,6 +197,7 @@ div {
 	margin-left: 10px;
 	background-color: #dcedc8;
 }
+
 .zyxnote-head ,
 .zyxnote-cnt,
 .zyxnote-cnt1,
@@ -181,6 +209,9 @@ div {
 	text-align: center;
 	z-index: 0;
 	color: #EB3F2F;
+}
+.zyxnote-cnt {
+	color:black;
 }
 .zyxnote-head:hover,.zyxnote-head1 {
 	height: 70px;
@@ -288,11 +319,7 @@ li {
 	position: fixed;
 	top:0;
 	left:0;
-	/*background-color: lightgray;*/
-	background-color: white;
-}
-.zyx-nav-fix .zyx-dirnav-cnt ul li a{
-	color: black;
+	background-color: lightgray;
 }
 .zyx-nav-clearfix {
 	position: relative;
@@ -520,5 +547,19 @@ li {
 	position: relative;
 	top:50%;
 	transform: translate(-50%,0);
+}
+.totop {
+	width: 50px;
+	height:50px;
+	position: fixed;
+	bottom: 50px;
+	right:50px;
+	display: none;
+	background-color:rgba(7,7,7,0.7);
+	box-shadow: 1px 1px 5px black;
+	transition: top 0.5s;
+}
+.totop:hover {
+	bottom: 55px;
 }
 
