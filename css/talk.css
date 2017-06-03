@@ -1,3 +1,66 @@
+/**PART1: 导航栏**/
+.container-fluid {
+    width: 100%;
+    padding: 0;
+}
+.topnav {
+    height: 100px;
+    margin-bottom: -40px;
+}
+.topnav-title {
+    height:60px;
+    width:100%;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background:#fff;
+}
+.topnav-title ul {
+    height:60px;
+    margin:0px auto;
+}
+.topnav-title ul li {
+    display:inline-block;
+    vertical-align:top;
+    *display:inline;
+    height:60px;
+}
+.topnav-title ul li a.link {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 24px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #444;
+    font-family: Microsoft Yahei,黑体;
+    font-weight: bold;
+    position: relative;
+}
+.topnav-title ul li a.link strong {
+    font-weight:bold;
+    display:inline-block;
+    vertical-align:top;
+    *display:inline;
+    height:60px;
+}
+.topnav-title ul li:hover {
+    cursor:pointer;
+    background:#fafafa;
+}
+#topnav-title-nav li.b-active {
+    display: inline-block;
+    vertical-align: top;
+    height: 60px;
+}
+.topnav-title ul li.b-active a strong {
+    border-bottom:4px solid #ff3232;
+    height:56px;
+    overflow:hidden;
+}
+
+/*三块div构架：评论区、发布话题、回复*/
 .part1 {
     display: flex;
     flex-direction: column;
@@ -19,13 +82,8 @@
     flex-direction: column;
     margin-top: 120px;
 }
-.guide {
-    height:80px;
-    width: 100%;
-    border:1px solid #000;
-    text-align: center;
-    line-height: 80px;
-}
+
+/*评论区*/
 .total {
     width: 80%;
     margin-left:10%;
@@ -39,6 +97,8 @@
     justify-content: space-around;
     align-items: center;
 }
+
+/*发布话题按钮*/
 .createnew {
     width:100px;
     height: 25px;
@@ -50,6 +110,8 @@
     line-height: 25px;
     cursor: pointer;
 }
+
+/*一个评论元素，头像+评论+回复内容*/
 .element {
     width: 100%;
     display: flex;
@@ -88,18 +150,54 @@ ul.pagination {
     justify-content: space-between;
 }
 .talkmessage {
-    height: 100px;
+    height: 120px;
     width: 100%;
     /*border:1px solid #000;*/
     display: flex;
 }
 .self {
-    width:80%;
+    width:100%;
     border:1px solid #000;
     border-radius:5px;
-    word-break:break-all;
-    overflow-y:scroll;
+    height:120px;
+    text-indent:15px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
 }
+.self:first-letter {
+    font-size:30px;
+    color:#ff0000;
+    float:left;
+}
+.talkmessage_self {
+    width:80%;
+    height: 120px;
+
+}
+
+
+/*显示全部内容和收起*/
+.showallmes {
+    display:flex;
+    justify-content:flex-end;
+    text-decoration: underline;
+    color: #2046C0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.folder {
+    display:flex;
+    justify-content:flex-end;
+    text-decoration: underline;
+    color: #2046C0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
 .othertalk>div, .self>p {
     margin-bottom: 0;
     margin-left:5px;
@@ -107,11 +205,16 @@ ul.pagination {
 }
 .other {
     width: 100%;
-    height: 100px;
+    height: 120px;
     /*border:1px solid #000;*/
     display: flex;
+    /*margin-top: 10px;*/
     /*justify-content: center;*/
-    align-items: center;
+    /*align-items: center;*/
+}
+.otherelement {
+    width:80%;
+    height: 120px;
 }
 .othertalk {
     width: 80%;
@@ -210,6 +313,7 @@ ul.pagination {
 }
 .username {
     font-weight:bold;
+    font-size: 15px;
 }
 .onetalk {
     display: flex;

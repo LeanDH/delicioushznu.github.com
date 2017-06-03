@@ -34,4 +34,26 @@ $ (document).ready(function() {
         $(".part3push").css("display","none");
     });
 
+    //显示全部和收起
+    $(".showallmes").click(function() {
+        $(this).prev().css("height","auto");
+        $(this).parent().css("height","auto");
+        $(this).parent().parent().css("height","auto");
+        $(this).text("收起");
+        $(this).attr("class","folder");
+    });
+    $(".folder").click(function() {
+        $(this).prev().css("height","100px");
+        $(this).parent().css("height","120px");
+        $(this).parent().parent().css("height","120px");
+        $(this).text("显示全部");
+        $(this).attr("class","showallmes");
+        alert("hello");
+    });
+
+    // 导航栏
+    $('#title-nav li').eq(3).addClass('b-active');
+    $('#title-nav li').mouseenter(function(event) {
+        $(this).addClass('b-active').siblings().removeClass('b-active');
+    });
 });

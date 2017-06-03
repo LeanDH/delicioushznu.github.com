@@ -13,7 +13,50 @@
 </head>
 <body>
 <div class="part1">
-    <div class="guide">guide</div>
+    <!--PART1: 导航栏-->
+    <div class="container-fluid topnav">
+        <div class="topnav-title">
+            <ul id="title-nav">
+                <li class="home">
+                    <a href="../index.html" class="link">
+                        <strong>首页</strong>
+                    </a>
+                </li>
+                <li class="canteen">
+                    <a href="canteen.html" class="link">
+                        <strong>食堂</strong>
+                    </a>
+                </li>
+                <li class="delicious">
+                    <a href="delicious.html" class="link">
+                        <strong>美食</strong>
+                    </a>
+                </li>
+                <li class="others">
+                    <a href="" class="link">
+                        <strong>其他</strong>
+                    </a>
+                </li>
+                <li class="worker">
+                    <a href="worker.html" class="link">
+                        <strong>员工墙</strong>
+                    </a>
+                </li>
+                <li class="cart">
+                    <a href="cart.html" class="link">
+                        <strong>购物车</strong>
+                    </a>
+                </li>
+                <li class="talk">
+                    <a href="talk.html" class="link">
+                        <strong>评论</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--PART2: 评论区-->
     <div class="total center-text">
         <div class="title">
             <div><ul class="page"></ul></div>
@@ -31,14 +74,11 @@
                     <div class="time">2017.06.02</div>
                 </div>
                 <div class="talkmessage">
-                    <div class="self">
-                        <p>巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！</p>
-                        <p>巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！</p>
-                        <p>巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！</p>
-                        <p>巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！</p>
-                        <p>巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！</p>
-                        <p>巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！</p>
-                        <p>巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！</p>
+                    <div class="talkmessage_self">
+                        <span class="self">
+                            巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！巨咸，咸了两年，还是一样的味道，还是一样的咸！咸！咸！
+                        </span>
+                        <div class="showallmes">显示全部</div>
                     </div>
                     <div class="message-good">
                         <div class="ui-body-feed ui-feed1" id="heart">
@@ -48,9 +88,12 @@
                     </div>
                 </div>
                 <div class="other">
-                    <div class="othertalk">
-                        <div class="onetalk"><div class="username">jxh:</div>是啊，梅干菜极度咸！</div>
-                        <div class="onetalk"><div class="username">zyx:</div>同意楼上！</div>
+                    <div class="otherelement">
+                        <div class="othertalk">
+                            <div class="onetalk"><div class="username">jxh:</div>是啊，梅干菜极度咸！</div>
+                            <div class="onetalk"><div class="username">zyx:</div>同意楼上！</div>
+                        </div>
+                        <div class="showallmes">显示全部</div>
                     </div>
                     <div class="push">
                         <p class = "pushbutton">回复</p>
@@ -60,12 +103,13 @@
             </div>
         </div>
 
-
         <div class="pagebox">
             <div><ul class="page"></ul></div>
         </div>
     </div>
 </div>
+
+<!--PART3: 发布话题-->
 <div class="part2createnew">
     <div class="part2-title">
         <p>标题:</p>
@@ -80,6 +124,8 @@
         <div class="yesbutton">发布</div>
     </div>
 </div>
+
+<!--PART4: 回复-->
 <div class="part3push">
     <div class="part3-self">
         <p>内容:</p>
