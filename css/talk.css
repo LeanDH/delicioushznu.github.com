@@ -319,6 +319,17 @@ ul.pagination {
     display: flex;
     flex-direction: row;
 }
+
+/*富文本编辑器*/
+form {
+    margin: 0;
+}
+.content {
+    display: block;
+    width:800px;
+    height:400px;
+    visibility:hidden;
+}
 /*.blur {*/
     /*filter: url(blur.svg#blur); !* FireFox, Chrome, Opera *!*/
     /*-webkit-filter: blur(5px); !* Chrome, Opera *!*/
