@@ -9,7 +9,7 @@ $(".b-check").hide();
 /*复选框全选或全不选效果*/
 function selectAll()
 {
-	var oInput=document.getElementsByName("cartCheckBox");
+	var oInput=document.getElementsByClassName("cartCheckBox");
     for (var i=0;i<oInput.length;i++)
     {
  	    oInput[i].checked=document.getElementById("allCheckBox").checked;
@@ -20,7 +20,7 @@ function selectAll()
 function selectSingle()
 {
 	var k=0;
-	var oInput=document.getElementsByName("cartCheckBox");
+	var oInput=document.getElementsByClassName("cartCheckBox");
 	 for (var i=0;i<oInput.length;i++){
 	   if(oInput[i].checked==false)
 	   {
@@ -48,7 +48,7 @@ function changeNum(numId,flag)
 		/*减少商品数量*/
 		if(numId.value<=1)
 		{
-			alert("宝贝数量必须大于0");
+			alert("商品数量必须大于0");
 			return false;
 		}
 		else
@@ -79,6 +79,8 @@ function productCount()
     {
     	var numproduct=$(".goods:eq("+i+")").children(".product");
     	$(".goods:eq("+i+")").height(150*numproduct.length);
+    	// total=0;
+    	// integral=0;
     	if(numproduct.length>0)
     	{
     		for(var j=0;j<numproduct.length;j++)
@@ -90,8 +92,10 @@ function productCount()
 				total+=price*number;
 				$(".goods:eq("+i+")").children(".product:eq("+j+")").children(".detail:eq(6)")[0].innerHTML=price*number;
     		}
-    		document.getElementById("total").innerHTML=total;
-			document.getElementById("integral").innerHTML=integral;
+    		$("#total")[0].innerHTML=total;
+    		$("#integral")[0].innerHTML=integral;
+   //  		document.getElementById("total").innerHTML=total;
+			// document.getElementById("integral").innerHTML=integral;
     	}
     }
 }
@@ -125,3 +129,38 @@ $(".b-bottom-commit").click(function()
     // $(".process_gray:eq(0)").css("color","#fff");
     // $(".process_gray_arrow:eq(0)").css("background-color","#ff6600");
 });
+
+
+
+// $('input [name='cartCheckBox']').click(function()
+// {
+// 	$(this).parent().children().css("background","pink");
+
+// });
+// $(".cartCheckBox:eq(0)").parent().parent().children().css("background","red");
+// $(".cartCheckBox").click(function(){
+// 	var oInput=document.getElementsByClassName("cartCheckBox");
+// 	alert(oInput.length);
+// 	 for (var i=0;i<oInput.length;i++){
+// 	   if(oInput[i].checked==true)
+// 	   {
+// 	   	alert(i);
+// 			$(".cartCheckBox:eq("+i+")").parent().parent().children().css("background","red");
+// 	    }
+// 	}
+// });
+
+$(".detail").hover(
+	function(){
+		$(this).parent().children().css("background","#E5E5E5");
+		$(this).parent().children(".detail:eq(5)").children(".num_input").css("background","#E5E5E5");
+	},
+	function(){
+		$(this).parent().children().css("background","white");
+		$(this).parent().children(".detail:eq(5)").children(".num_input").css("background","white");
+	}
+);
+// $(".cartCheckBox").click(function()
+// {
+// 	    $(this).parent().parent().children().css("background-color","red");
+// });
