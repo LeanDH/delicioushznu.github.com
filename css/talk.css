@@ -172,10 +172,13 @@ ul.pagination {
     color:#ff0000;
     float:left;
 }
+.self:after{
+    position: absolute;
+    content: '...';
+}
 .talkmessage_self {
     width:80%;
     height: 120px;
-
 }
 
 
@@ -227,8 +230,10 @@ ul.pagination {
     /*border:1px solid #000;*/
     /*border-radius:5px;*/
     height:100px;
+
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 .push {
     height: 100px;
