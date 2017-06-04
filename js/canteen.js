@@ -14,6 +14,13 @@ function init()
 	var pic=$('.l-lunbo-image');
 	var point=$('.l-lunbo-point');
 
+    //返回顶部
+    $('.l-logo').click(function(){
+    	$('html,body').animate({
+    		scrollTop:$('body').offset().top
+    	},1000);
+    });
+
 	function change(){
 		pic.children().eq(pos).fadeOut(300);
 		point.children().eq(pos).removeClass('fa-circle');

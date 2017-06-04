@@ -26,10 +26,14 @@ function init()
 
     //喜欢事件
     $('.l-food-love').click(function(){
-		$('#l-food-love').removeClass('fa-heart-o');    	
-    	$('#l-food-love').addClass('fa-heart');
-    	$('#l-food-love').css('color','#ff3232');
-    	$('.l-food-love').css('border','1px solid #ff3232');
+        $(this).children("#l-food-love").removeClass('fa-heart-o');
+        $(this).children("#l-food-love").addClass('fa-heart');
+        $(this).children("#l-food-love").css('color','#ff3232');
+        $(this).css('border','1px solid #ff3232');
+		// $('#l-food-love').removeClass('fa-heart-o');    	
+  //   	$('#l-food-love').addClass('fa-heart');
+  //   	$('#l-food-love').css('color','#ff3232');
+  //   	$('.l-food-love').css('border','1px solid #ff3232');
     });
 
     //购物车事件

@@ -4,6 +4,9 @@
  * @date    2017-05-16 19:44:31
  * @version $Id$
  */
+// $(".part1shopping").hide();
+// $(".part2check").show();
+
 
 $(".b-check").hide();
 /*复选框全选或全不选效果*/
@@ -79,8 +82,6 @@ function productCount()
     {
     	var numproduct=$(".goods:eq("+i+")").children(".product");
     	$(".goods:eq("+i+")").height(150*numproduct.length);
-    	// total=0;
-    	// integral=0;
     	if(numproduct.length>0)
     	{
     		for(var j=0;j<numproduct.length;j++)
@@ -94,8 +95,6 @@ function productCount()
     		}
     		$("#total")[0].innerHTML=total;
     		$("#integral")[0].innerHTML=integral;
-   //  		document.getElementById("total").innerHTML=total;
-			// document.getElementById("integral").innerHTML=integral;
     	}
     }
 }
@@ -117,39 +116,6 @@ $(".detail-delete").click(function()
     productCount();
 });
 
-$(".b-bottom-commit").click(function()
-{
-	$(".shopping").hide();
-	$(".b-check").show();
-    $(".process_gray_left").css("background","#e4e4e4");
-    // $(".process_red").css("color","black");
-    // $(".process_red").css("background","#e4e4e4");
-    // $(".process_red_arrow").css("background-color","#e4e4e4");
-    // $(".process_gray:eq(0)").css("background","#ff6600");
-    // $(".process_gray:eq(0)").css("color","#fff");
-    // $(".process_gray_arrow:eq(0)").css("background-color","#ff6600");
-});
-
-
-
-// $('input [name='cartCheckBox']').click(function()
-// {
-// 	$(this).parent().children().css("background","pink");
-
-// });
-// $(".cartCheckBox:eq(0)").parent().parent().children().css("background","red");
-// $(".cartCheckBox").click(function(){
-// 	var oInput=document.getElementsByClassName("cartCheckBox");
-// 	alert(oInput.length);
-// 	 for (var i=0;i<oInput.length;i++){
-// 	   if(oInput[i].checked==true)
-// 	   {
-// 	   	alert(i);
-// 			$(".cartCheckBox:eq("+i+")").parent().parent().children().css("background","red");
-// 	    }
-// 	}
-// });
-
 $(".detail").hover(
 	function(){
 		$(this).parent().children().css("background","#E5E5E5");
@@ -160,7 +126,17 @@ $(".detail").hover(
 		$(this).parent().children(".detail:eq(5)").children(".num_input").css("background","white");
 	}
 );
-// $(".cartCheckBox").click(function()
-// {
-// 	    $(this).parent().parent().children().css("background-color","red");
-// });
+
+//提交事件
+$(".b-bottom-commit").click(function()
+{
+	$(".part1shopping").css("display","none");
+	$(".part2check").css("display","flex");
+    $(".process_gray_left").css("background","#e4e4e4");
+    // $(".process_red").css("color","black");
+    // $(".process_red").css("background","#e4e4e4");
+    // $(".process_red_arrow").css("background-color","#e4e4e4");
+    // $(".process_gray:eq(0)").css("background","#ff6600");
+    // $(".process_gray:eq(0)").css("color","#fff");
+    // $(".process_gray_arrow:eq(0)").css("background-color","#ff6600");
+});

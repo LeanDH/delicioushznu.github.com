@@ -28,7 +28,7 @@
  	font-size: 16px;
  	color: #5394C5;
  }
-.shopping
+.part1shopping
 {
     /*height: 1000px;*/
     width:100%;
@@ -291,6 +291,11 @@
 {
 	height: 50px;
 }
+.part2check
+{
+	display: none;
+
+}
 .b-bottom-commit
 {
 	/*width:80px;
@@ -311,14 +316,162 @@
     width:100%;
     height: 1000px;
 }
-.main-square
+.b-check-main
 {
-	width:600px;
-	height: 500px;
+	width:100%;
+}
+.check-main-square
+{
+	/*width:500px;*/
+	height: 700px;
 	position: relative;
 	border:1px solid black;
-	margin-top:50px;
-	margin-left: 200px;
+	margin:50px;
+	/*margin-left: 50%;*/
+}
+.receiver-msg
+{
+	display: flex;
+	align-items: center;
+	height: 70px;
+	color: black;
+	margin:5px 0 5px 5px;
+	border-bottom: 3px solid rgb(238,238,238);
+
+}
+.receiver-msg-add
+{
+	/*display: flex;*/
+	font-size: 14px;
+	font-weight: normal;
+
+}
+.receiver-msg-num
+{
+	font-size: 16px;
+	font-weight: normal;
+}
+.receiver-msg-num:before
+{
+	content:'收货人:';
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+    margin: 0 5px 0 5px;
+}
+.receiver-msg-add:before
+{
+	content: '收货地址:';
+	line-height: 30px;
+	font-size:14px;
+	font-weight: bold;
+	color: black;
+	margin:0 5px 0 5px;
+}
+.receiver-talk
+{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid rgb(238,238,238);
+}
+.receiver-talk-input
+{
+	display: flex;
+	align-items: center;
+}
+.before-logo
+{
+	color: rgb(255,102,0);
+}
+.receiver-talk-input:before
+{
+	content: '买家留言：';
+	margin: 0 5px 0 5px;
+	font-weight: bold;
+}
+.selftitle {
+    width: 70%;
+    height: 20px;
+    border:1px solid #000;
+    font-size: 18px;
+    /*word-break:break-all;*/
+    /*overflow-x:scroll;*/
+}
+.goods-msg
+{
+	height: 350px;
+	margin: 5px;
+	border-bottom: 3px solid rgb(238,238,238);
+}
+.goods-msg-single
+{
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+.result-single-msg
+{
+	font-weight: bold;
+	font-size: 15px;
+}
+.result-single-mul:before
+{
+	content: '¥';
+}
+.single-name
+{
+	font-size: 14px;
+	font-weight: normal;
+}
+.single-num:before
+{
+	content: '×';
+}
+.single-price:before
+{
+	content: '¥';
+}
+.price-result
+{
+	height: 150px;
+}
+.price-result-single
+{
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+.pay-result
+{
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+.price-total
+{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-weight: normal;
+	font-size:15px;
+	color: #EB3F2F;
+}
+.price-total:before
+{
+	content: '合计：¥ ';
+}
+.price-topay
+{
+	height: 100%;
+	background: #EB3F2F;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .b-empty
 {

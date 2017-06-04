@@ -58,7 +58,7 @@
     vertical-align: top;
     height: 60px;
 }
-.b-title ul li.b-current a strong{
+.b-title ul li.b-canteen a strong{
 	border-bottom:4px solid #ff3232;
 	height:56px;
 	overflow:hidden;
@@ -107,7 +107,7 @@ ul, ol {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: gray;
+	background: transparent;
 }
 li { 
 	list-style: none; 
@@ -149,6 +149,7 @@ li {
     opacity: 1;
 }
 #b04 .arrow {
+	background: black;
     position: absolute; 
 	bottom: 0;
 }
@@ -169,11 +170,13 @@ li {
 	right: 0;
 	height: 80%;
 	width: 200px;
-	background: black;
+	background: white;
 	opacity: 0.5;
 	color: white;
 }
-
+.temp{
+	color: white;
+}
 .l-cnt {
 	display: flex;
 	justify-content: center;

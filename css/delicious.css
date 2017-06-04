@@ -80,7 +80,7 @@ li {
     vertical-align: top;
     height: 60px;
 }
-.b-title ul li.b-current a strong{
+.b-title ul li.b-delicious a strong{
 	border-bottom:4px solid #ff3232;
 	height:56px;
 	overflow:hidden;
