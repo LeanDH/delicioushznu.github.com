@@ -19,7 +19,6 @@
 }
 .b-title ul{
 	height:60px;
-/*	width:990px;*/
 	margin:0px auto;
 }
 .b-title ul li{
@@ -196,7 +195,7 @@ li {
 	height: 400px; 
 	width:1100px;
 	margin-bottom: 50px;
-	background-image: url("../img/plate2.png");	
+	background-image: url("../img/plate1.png");	
 	background-size: 1100px 400px;
 	background-repeat:no-repeat;
 }
@@ -205,7 +204,23 @@ li {
 	height: 400px; 
 	width:1100px;
 	margin-bottom: 50px;
+	background-image: url("../img/plate2.png");	
+	background-size: 1100px 400px;
+	background-repeat:no-repeat;
+}
+.l-plate3 {
+	height: 400px; 
+	width:1100px;
+	margin-bottom: 50px;
 	background-image: url("../img/plate3.png");	
+	background-size: 1100px 400px;
+	background-repeat:no-repeat;
+}
+.l-plate4 {
+	height: 400px; 
+	width:1100px;
+	margin-bottom: 50px;
+	background-image: url("../img/plate4.png");	
 	background-size: 1100px 400px;
 	background-repeat:no-repeat;
 }
@@ -231,6 +246,7 @@ li {
 	cursor: pointer;
 	border-radius: 10px;
 	font-family:'cyjianxkb0e1498d21917d';
+	z-index: 10000;
 }
 .l-food-choose>div:not(:first-child) {
 	display: none;
@@ -242,47 +258,198 @@ li {
 	left: 0;
 	height: 100%;
 	width: 100%;
-/*	background: blue;*/
 }
-/*.l-food-menu>div:not(:first-child) {
-	display: none;
-}*/
-
+.l-food-menu-cntm {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1000;	
+}
+.l-food-menu-cnta {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	z-index: 0;		
+}
+.l-food-menu-cntn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;	
+	z-index: 0;	
+}
 .l-food-menu-m {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
 	width: 100%;
 }
 .l-food-menu-a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
 	width: 100%;
-	display: none;	
 }
 .l-food-menu-n {
+	height: 100%;
+	width: 100%;	
+}
+.l-food-menu-m ul li { 
+	float: left;
+}
+
+.l-food-menu-m .dots { 
+	position: absolute; 
+	right: 10px; 
+	bottom: 10px;
+}
+.l-food-menu-m .dots li { 
+    display: inline-block; 
+    width: 10px; 
+    height: 5px; 
+    margin: 0 4px; 
+    text-indent: -999em; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    opacity: .4; 
+    -webkit-transition: background .5s, opacity .5s; 
+    -moz-transition: background .5s, opacity .5s; 
+    transition: background .5s, opacity .5s;
+}
+.l-food-menu-m .dots li.active 
+{
+    background: #fff;
+    opacity: 1;
+}
+.l-food-menu-m #al {
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+.l-food-menu-m #ar {
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+
+.l-food-menu-a ul li { 
+	float: left;
+}
+
+.l-food-menu-a .dots { 
+	position: absolute; 
+	right: 10px; 
+	bottom: 10px;
+}
+.l-food-menu-a .dots li { 
+    display: inline-block; 
+    width: 10px; 
+    height: 5px; 
+    margin: 0 4px; 
+    text-indent: -999em; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    opacity: .4; 
+    -webkit-transition: background .5s, opacity .5s; 
+    -moz-transition: background .5s, opacity .5s; 
+    transition: background .5s, opacity .5s;
+}
+.l-food-menu-a .dots li.active 
+{
+    background: #fff;
+    opacity: 1;
+}
+.l-food-menu-a #al {
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+.l-food-menu-a #ar {
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+
+.l-food-menu-n ul li { 
+	float: left;
+}
+
+.l-food-menu-n .dots { 
+	position: absolute; 
+	right: 10px; 
+	bottom: 10px;
+}
+.l-food-menu-n .dots li { 
+    display: inline-block; 
+    width: 10px; 
+    height: 5px; 
+    margin: 0 4px; 
+    text-indent: -999em; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    opacity: .4; 
+    -webkit-transition: background .5s, opacity .5s; 
+    -moz-transition: background .5s, opacity .5s; 
+    transition: background .5s, opacity .5s;
+}
+.l-food-menu-n .dots li.active 
+{
+    background: #fff;
+    opacity: 1;
+}
+.l-food-menu-n #al {
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+.l-food-menu-n #ar {
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+
+.l-food-page-f {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.l-food-page {
+	height: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
-	width: 100%;
-	display: none;
 }
 .l-food {
-	height: 300px;
-	width: 200px;
+	height: 75%;
+	width: 25%;
 	background: white;
-	margin: 15px;
 	position: relative;
 	border: 2px solid white;
+	margin: 48px 0 48px 0;
 	border-radius: 10px;	
 }
 .l-food:hover {
 	box-shadow: 5px 5px 5px #888888;
 }
+.l-blank1{
+	height: 100%;
+	width: 7.5%;
+}
+.l-blank2{
+	height: 100%;
+	width: 5%;
+}
+
 
 .l-food-name {
 	position: absolute;
