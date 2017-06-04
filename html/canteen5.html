@@ -9,6 +9,7 @@
 	<meta name="keywords" content="">
 	<link href="../css/canteen5.css" rel="stylesheet">
 	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="..\lib\jquery\jquery.animatedheadline.css">
 	<link href="../img/title.png" rel="shortcut icon"/>
 	<link href='http://cdn.webfont.youziku.com/webfonts/nomal/102781/45803/5930cb77f629d80b3c0c1ff8.css' rel='stylesheet' type='text/css' />
 	<link href='http://cdn.webfont.youziku.com/webfonts/nomal/102781/19650/5930d7f7f629d80b3c0c203a.css' rel='stylesheet' type='text/css' />
@@ -57,7 +58,15 @@
 	<div class="b-titlecpy"></div>
 	<div class="l-welcom">
 		<div class="l-canteenname">五号食堂</div>
-		<div class="l-welcomword">欢迎来到杭州师范大学·五号食堂</div>
+		<div class="l-welcomword">
+		    <section class="intro animate-type">
+            <h4 class="ah-headline">
+                <span class="ah-words-wrapper waiting">
+                    <b class="is-visible">欢迎来到杭州师范大学·五号食堂</b>
+                </span>
+            </h4>
+        </section>
+		</div>
 	</div>
 	<div class="l-cnt">
 		<div class="l-store-row">
@@ -99,5 +108,6 @@
 	</div>
 </body>
 <script src="../lib/jquery/jquery-3.2.1.js"></script>
+<script src="..\js\jquery.animatedheadline.min.js"></script>
 <script src="../js/canteen5.js"></script>
 </html>

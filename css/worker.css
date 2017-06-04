@@ -586,17 +586,10 @@ a:hover {
 }
 .fa-thumbs-up {
    font-size: 18px;
-   margin-left: 135px;
+   margin-left: 155px;
 }
 .fa-thumbs-up:hover {
    color: #27C24C;
-}
-.fa-thumbs-down {
-   font-size: 18px;
-   margin-left: 10px;
-}
-.fa-thumbs-down:hover {
-   color: #F05050;
 }
 .ui-body-head {
     position:relative;

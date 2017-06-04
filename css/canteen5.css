@@ -163,3 +163,6 @@ body {
 	font-size: 35px;
 	color: white;	
 }
+.is-visible{
+	padding-right: 10px;
+}

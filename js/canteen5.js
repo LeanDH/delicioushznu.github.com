@@ -10,3 +10,8 @@ function init()
 
 
 }
+
+
+$('.animate-type').animatedHeadline({
+    animationType: 'type'
+});
