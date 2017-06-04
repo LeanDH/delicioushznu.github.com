@@ -4,11 +4,11 @@
  * @date    2017-05-16 19:44:31
  * @version $Id$
  */
-// $(".part1shopping").hide();
-// $(".part2check").show();
 
+ //一开始part2和part3都是隐藏状态
+$(".part2check").hide();
+$(".part3confirm").hide();
 
-$(".b-check").hide();
 /*复选框全选或全不选效果*/
 function selectAll()
 {
@@ -68,6 +68,7 @@ function changeNum(numId,flag)
 	}
 }
 
+//计算金额
 function productCount()
 {
 	var total=0;      //商品金额总计
@@ -116,6 +117,7 @@ $(".detail-delete").click(function()
     productCount();
 });
 
+//悬浮到鼠标所在行时改变颜色
 $(".detail").hover(
 	function(){
 		$(this).parent().children().css("background","#E5E5E5");
@@ -132,11 +134,17 @@ $(".b-bottom-commit").click(function()
 {
 	$(".part1shopping").css("display","none");
 	$(".part2check").css("display","flex");
-    $(".process_gray_left").css("background","#e4e4e4");
-    // $(".process_red").css("color","black");
-    // $(".process_red").css("background","#e4e4e4");
-    // $(".process_red_arrow").css("background-color","#e4e4e4");
-    // $(".process_gray:eq(0)").css("background","#ff6600");
-    // $(".process_gray:eq(0)").css("color","#fff");
-    // $(".process_gray_arrow:eq(0)").css("background-color","#ff6600");
+	$(".part3confirm").css("display","none");
+});
+
+//确认支付事件
+$(".price-topay") .click(function(){
+	$(".part1shopping").css("display","none");
+	$(".part2check").css("display","none");
+	$(".part3confirm").show();
+});
+
+//支付完成后回到主页面
+$(".confirm-btn").click(function(){
+	window.location.href="../index.html";
 });
