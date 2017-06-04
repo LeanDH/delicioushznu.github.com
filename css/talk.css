@@ -162,8 +162,9 @@ ul.pagination {
     height:100px;
     text-indent:15px;
     display: -webkit-box;
-    overflow: hidden;
     text-overflow: ellipsis;
+    overflow: hidden;
+
     word-wrap: break-word;
     -webkit-box-orient: vertical;
 }
@@ -171,10 +172,6 @@ ul.pagination {
     font-size:30px;
     color:#ff0000;
     float:left;
-}
-.self:after{
-    position: absolute;
-    content: '...';
 }
 .talkmessage_self {
     width:80%;
