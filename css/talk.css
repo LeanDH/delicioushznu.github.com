@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
 }
-.part2createnew{
+.part2{
     display: none;
     width: 100%;
     height: 100%;
@@ -76,7 +76,7 @@
     align-items: center;
     flex-direction: column;
 }
-.part3push {
+.part3{
     display: none;
     width: 100%;
     height: 100%;
@@ -153,11 +153,11 @@ ul.pagination {
     padding: 0;
     margin: 0;
 }
-.talktitle {
+.message-talktitle {
     font-weight: bold;
     font-size: 20px;
 }
-.titleandtime {
+.message-titleandtime {
     width:80%;
     display: flex;
     justify-content: space-between;
@@ -225,7 +225,7 @@ ul.pagination {
     /*justify-content: center;*/
     /*align-items: center;*/
 }
-.otherelement {
+.other-element {
     width:80%;
     height: 120px;
 }
@@ -235,7 +235,7 @@ ul.pagination {
     /*!*border: 1px solid #000;*!*/
     /*!*border-radius: 5px;*!*/
 /*}*/
-.othertalk {
+.other-element-talk {
     width:100%;
     /*border:1px solid #000;*/
     /*border-radius:5px;*/
@@ -313,7 +313,7 @@ ul.pagination {
     border: 1px solid #000;
     font-size: 20px;
 }
-.part2createnew p {
+.part2 p {
     font-size: 20px;
 }
 .twobutton {
