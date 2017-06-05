@@ -79,65 +79,6 @@ function init()
 	$('.l-lunbo-title').children().mouseout(function(){
 		$('.l-lunbo-titlecnt').css('display','none');
 	});
-		// var images = document.getElementById('l-phochange').getElementsByTagName('img');
-		// var pos = 0;
-		// var len = images.length;
-
-		// function change(){
-		// 	$('#l-phochange').children().eq(pos).fadeOut(300);
-  //   		$('#l-page').children().eq(pos).removeClass('fa-circle');
-  //   		$('#l-page').children().eq(pos).addClass('fa-circle-o');
-
-  //   		pos = (pos+1)%len;
-  //   		$('#l-page').children().eq(pos).removeClass('fa-circle-o');
-  //   		$('#l-page').children().eq(pos).addClass('fa-circle');
-    
-  //   		$('#l-phochange').children().eq(pos).fadeIn(400);
-  //   		// images[pos].style.display = 'inline';
-
-  //   		$('#l-phochange').children().eq(pos).css('display','inline');
-  //   		path=$('#l-phochange').children().eq(pos)[0].src;
-
-  //   		$('#l-phochangebck').attr('src',path);
-
-		// }; 
-
-
-
-
-
-		// var lunbo=setInterval(change,3000);
-
-		// $('.l-pre').click(function(){
-		// 	clearInterval(lunbo);
-		// 	images[pos].style.display = 'none';
-  //   		$('#l-page').children().eq(pos).removeClass('fa-circle');
-  //   		$('#l-page').children().eq(pos).addClass('fa-circle-o');       	
-		// 	pos=((pos-1)+len)%len;
-  //  			images[pos].style.display = 'inline';
-    		
-  //   		path=$('#l-phochange').children().eq(pos)[0].src;
-  //   		$('#l-phochangebck').attr('src',path);
-
-  //   		$('#l-page').children().eq(pos).removeClass('fa-circle-o');
-  //   		$('#l-page').children().eq(pos).addClass('fa-circle');            
-  //   		lunbo=setInterval(change,3000);
-		// });
-		// $('.l-next').click(function(){
-		// 	clearInterval(lunbo);
-		// 	images[pos].style.display = 'none';
-  //   		$('#l-page').children().eq(pos).removeClass('fa-circle');
-  //  			$('#l-page').children().eq(pos).addClass('fa-circle-o');        	
-		// 	pos=(pos+1)%len;
-  //   		images[pos].style.display = 'inline';
-    		
-  //   		path=$('#l-phochange').children().eq(pos)[0].src;
-  //   		$('#l-phochangebck').attr('src',path);
-
-  //   		$('#l-page').children().eq(pos).removeClass('fa-circle-o');
-  //   		$('#l-page').children().eq(pos).addClass('fa-circle');  
-  //   		lunbo=setInterval(change,3000);            
-		// });
 
 
 		var prenum=0;

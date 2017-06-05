@@ -11,7 +11,7 @@
 }
 
 body {
-	background-color: black;
+	background-color: rgb(245,246,235);
 }
 
 .b-title {
@@ -80,7 +80,7 @@ body {
 .l-welcom {
 	height: 300px;
 	width:100%;
-	background-color: gray;
+	/*background-color: rgb(132,242,104);*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -90,18 +90,19 @@ body {
 .l-canteenname {
 	height: 120px;
 /*	width: 100%;*/
-	color: white;
+	color: rgb(242,159,63);
 	font-size: 85px;
 	font-weight: 600;
-	font-family:'LiDeBiao-Xing3b0bc411801917d';
+	font-family:'方正字迹-典雅楷体简体';
 }
 
 .l-welcomword {
+	font-family: "方正苏新诗柳楷简体";
 	height: 100px;
 	margin-left: 20px;
-	color: white;
+	color: rgb(242,159,63);
 	font-size: 50px;
-	font-weight: 600;
+	font-style:normal;
 }
 
 .l-cnt {
@@ -128,7 +129,7 @@ body {
 	top: -15px;
 }
 .l-store-cnt {
-	background: green;
+	background: rgb(242,159,63);
 	height: 300px;
 	width: 100%;
 	display: flex;
@@ -150,7 +151,7 @@ body {
 	align-items: center;
 	font-weight: 600;
 	font-size: 35px;
-	color: white;
+	color: rgb(242,159,63);
 }
 .l-store-title1{
 	height: 100px;
@@ -161,7 +162,7 @@ body {
 	align-items: center;
 	font-weight: 600;
 	font-size: 35px;
-	color: white;	
+	color: rgb(242,159,63);	
 }
 .is-visible{
 	padding-right: 10px;
