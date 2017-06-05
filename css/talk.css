@@ -92,10 +92,20 @@
 }
 .title {
     height: 100px;
-    border:1px solid #000;
+    /*border:1px solid #000;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.title-word {
+    display: inline-block;
+    color: green;
+    font-size: 5em;
+    /*font-family: ´微软雅黑´;*/
+    font-family:"楷体",Georgia,Serif;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#FF6767), to(rgba(51, 51, 51, 0.5)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*发布话题按钮*/
