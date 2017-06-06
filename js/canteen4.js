@@ -39,29 +39,25 @@ function init()
 
    	//菜品切换
     var unslider02 = $('.l-food-menu-m').unslider({
-        fluid: false,
         dots: true,
         speed: 1000
     }),
     data02 = unslider02.data('unslider');
     $('.unslider-arrow02').click(function() {
-            var fn = this.className.split(' ')[1];
-            data02[fn]();
+        var fn = this.className.split(' ')[1];
+        data02[fn]();
     });
-
     var unslider01 = $('.l-food-menu-a').unslider({
-        fluid: false,
         dots: true,
-        speed: 1000
+        speed: 1000      
     }),
     data01 = unslider01.data('unslider');
     $('.unslider-arrow01').click(function() {
-            var fn = this.className.split(' ')[1];
-            data01[fn]();
+        var fn = this.className.split(' ')[1];
+        data01[fn]();
     });
 
     var unslider0 = $('.l-food-menu-n').unslider({
-        fluid: false,
         dots: true,
         speed: 1000
     }),
