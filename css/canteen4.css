@@ -15,7 +15,7 @@
 	position: fixed !important;
 	background:#fff;
 	box-shadow:10px 0px 10px rgba(0,0,0,0.3);
-	z-index:10;
+	z-index:10000;
 }
 .b-title ul{
 	height:60px;
@@ -107,6 +107,7 @@ ul, ol {
 	flex-direction: column;
 	justify-content: center;
 	background: transparent;
+	background: black;
 }
 li { 
 	list-style: none; 
@@ -148,7 +149,7 @@ li {
     opacity: 1;
 }
 #b04 .arrow {
-	background: black;
+	background: rgb(76,76,76);
     position: absolute; 
 	bottom: 0;
 }
@@ -167,14 +168,24 @@ li {
 	position: absolute;
 	top: 0;
 	right: 0;
-	height: 80%;
+	height: 100%;
 	width: 200px;
-	background: white;
-	opacity: 0.5;
+	background-color: rgb(76,76,76);
 	color: white;
 }
-.temp{
-	color: white;
+.l-lunbo-introcnt {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+}
+.l-intro-tile {
+	font-size: 25px;
+	height: 50px;
+}
+.l-intro-word {
+	width: 95%;
 }
 .l-cnt {
 	display: flex;
@@ -246,7 +257,7 @@ li {
 	cursor: pointer;
 	border-radius: 10px;
 	font-family:'cyjianxkb0e1498d21917d';
-	z-index: 10000;
+	z-index: 1000;
 }
 .l-food-choose>div:not(:first-child) {
 	display: none;
@@ -309,8 +320,8 @@ li {
 }
 .l-food-menu-m .dots li { 
     display: inline-block; 
-    width: 10px; 
-    height: 5px; 
+    width: 20px; 
+    height: 10px; 
     margin: 0 4px; 
     text-indent: -999em; 
     border: 2px solid white; 
@@ -323,7 +334,7 @@ li {
 }
 .l-food-menu-m .dots li.active 
 {
-    background: #fff;
+    background: white;
     opacity: 1;
 }
 .l-food-menu-m #al {
