@@ -7,13 +7,6 @@
 $(init);
 function init()
 {
-	//点击进入
-	$('.l-tip').click(function(){
-		$('html,body').animate({
-    		scrollTop:$('.l-choose').offset().top
-    	},1000);
-    	$('.l-food-menu').css('display','flex');
-	});
 
 	//民族切换
 	$('.l-choose-menu').children().click(function(){

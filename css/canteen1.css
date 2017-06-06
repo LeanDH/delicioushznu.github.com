@@ -58,7 +58,7 @@
     vertical-align: top;
     height: 60px;
 }
-.b-title ul li.b-current a strong{
+.b-title ul li.b-canteen a strong{
 	border-bottom:4px solid #ff3232;
 	height:56px;
 	overflow:hidden;
@@ -67,7 +67,7 @@
 
 	
 body {
-	background-image: url('../img/canteen1.png');
+	/*background-image: url('../img/canteen1.png');*/
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position: top center;
@@ -75,40 +75,31 @@ body {
 }
 
 .l-logo {
-	font-size: 90px;
-	font-family:'jdlibianjianb1232e7a71917d';
+    height: 300px;
+    width: 100%;
+	font-size: 80px;
+    text-align: center;
 	color: green;
-	position: absolute;
-	left: 50%;
-	top: 120px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	cursor: pointer;
-}
-.l-tip{
-	font-size: 25px;
-	color: white;
-	animation: change 1s  ease-in  infinite ;
-}
-@keyframes change {
-    0%{ text-shadow: 0 0 4px gray}
-    50%{ text-shadow: 0 0 40px gray}
-    100%{ text-shadow: 0 0 4px gray}
+    justify-content: flex-end;
+    position: relative;
 }
 
 .l-bck {
 	position: absolute;
-	top: 500px;
+	top: 400px;
 	width: 100%;
 }
 
 .l-choose {
-	height: 400px;
+	height: 200px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	position: relative;
+
 }
 
 .l-navbar {
@@ -157,8 +148,6 @@ body {
     left: -100px;
     transform-origin: 100px 100px;
     transition: all 0.5s 0.1s;
-/*    border: 1px solid gray;
-    border-radius: 25px;*/
 }
 .l-navbar:hover .l-choose-menu li {
     transition: all 0.6s;
@@ -248,37 +237,41 @@ body {
 }
 
 .l-food-menu {
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	display: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
-.l-foodm {
-	height: 100px;
-	width: 20%;
-	display: flex;
-	align-items: center;
-	justify-content: center; 
-	font-size: 40px;
-	margin-bottom: 20px;
-	border-bottom: 1px solid black;
-	font-family:'NaiYoub170dcee11917d';	
+.l-food-class {
+    height: 1180px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border:20px solid transparent;
+    border-image:url("../img/border1.jpg") 30 30 repeat;
 }
-
+.l-class-word {
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .l-food-cnt {
-    width: 1100px;
-    list-style: none;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 	justify-content: center;
+    padding: 0 !important;
 }
 
 .l-food-cnt li{
     width: 200px;
     height: 250px;
-    margin: 0 30px 30px 30px;
+    margin-bottom: 20px;
     background-color: #fff;
     position: relative;
 	overflow: hidden;
@@ -291,11 +284,14 @@ body {
     background-color: #fff;
     width: 200px;
     height: 250px;
-    text-align: center;
-    line-height: 108px;
 }
 
 .l-food-img-3d {
+    position: relative;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
 	transform-style: preserve-3d;
 }
 
