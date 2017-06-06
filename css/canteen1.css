@@ -250,7 +250,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     border:20px solid transparent;
-    border-image:url("../img/border.jpg") 30 30 round;  
+    border-image:url("../img/border1.jpg") 30 30 repeat;
 }
 .l-class-word {
     height: 50px;
