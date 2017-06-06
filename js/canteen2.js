@@ -20,18 +20,30 @@ function init()
     		scrollTop:$('body').offset().top
     	},1000);
     });
-
+    //轮播图圈圈
 	function change(){
 		pic.children().eq(pos).fadeOut(300);
 		point.children().eq(pos).removeClass('fa-circle');
 		point.children().eq(pos).addClass('fa-circle-o');
-		pos=(pos+1)%3;
+		pos=(pos+1)%4;
 		pic.children().eq(pos).fadeIn(300);
 		point.children().eq(pos).addClass('fa-circle');
 		point.children().eq(pos).removeClass('fa-circle-o');		
 	};
 	var lunbo=setInterval(change,3000);
-	
+	point.children().click(function(){
+		clearInterval(lunbo);
+		pic.children().eq(pos).fadeOut(300);
+		point.children().eq(pos).removeClass('fa-circle');
+		point.children().eq(pos).addClass('fa-circle-o');
+		pos=point.children().index(this);
+		pic.children().eq(pos).fadeIn(300);
+		point.children().eq(pos).addClass('fa-circle');
+		point.children().eq(pos).removeClass('fa-circle-o');
+		lunbo=setInterval(change,3000);
+
+	});	
+	//轮播图箭头
 	$('.l-lb-pre').click(function(){
 		clearInterval(lunbo);
 		pic.children().eq(pos).fadeOut(300);
@@ -48,71 +60,63 @@ function init()
 		pic.children().eq(pos).fadeOut(300);
 		point.children().eq(pos).removeClass('fa-circle');
 		point.children().eq(pos).addClass('fa-circle-o');
-		pos=(pos+1)%3;
+		pos=(pos+1)%4;
 		pic.children().eq(pos).fadeIn(300);
 		point.children().eq(pos).addClass('fa-circle');
 		point.children().eq(pos).removeClass('fa-circle-o');
 		lunbo=setInterval(change,3000);
 	});
 
-	point.children().click(function(){
-		clearInterval(lunbo);
-		pic.children().eq(pos).fadeOut(300);
-		point.children().eq(pos).removeClass('fa-circle');
-		point.children().eq(pos).addClass('fa-circle-o');
-		pos=point.children().index(this);
-		pic.children().eq(pos).fadeIn(300);
-		point.children().eq(pos).addClass('fa-circle');
-		point.children().eq(pos).removeClass('fa-circle-o');
-		lunbo=setInterval(change,3000);
-
-	});
-
-
-	$('.l-lunbo-title').children().mouseover(function(){
+	//轮播图上标题鼠标停留事件
+	$('.l-lunbo-title').children().hover(function(){
 		$('.l-lunbo-titlecnt').css('display','inline');
-		$('.l-lunbo-titlecnt').children().eq(titlecnt).css('display','none');
+		$('.l-lunbo-titlecnt').children().eq(titlecnt).css('opacity','0');
 		titlecnt=$('.l-lunbo-title').children().index(this);
-		$('.l-lunbo-titlecnt').children().eq(titlecnt).css('display','inline');
+		$('.l-lunbo-titlecnt').children().eq(titlecnt).css('opacity','1');
+	},function(){
+		$('.l-lunbo-titlecnt').children().eq(titlecnt).css('opacity','0');
 	});
 
-	$('.l-lunbo-title').children().mouseout(function(){
+	$('.l-lunbo-titlecnt').hover(function(){
+		$('.l-lunbo-titlecnt').children().eq(titlecnt).css('opacity','1');
+	},function(){
 		$('.l-lunbo-titlecnt').css('display','none');
 	});
 
 
-		var prenum=0;
-		$('.l-choosebox').children().click(function(){
-			var num=$(this).index();
-			$('.l-followbox').children().eq(prenum).removeClass('l-follow');
-			$('.l-followbox').children().eq(num).addClass('l-follow');
-			prenum=num;
-		});
+	//选择早中晚
+	var prenum=0;
+	$('.l-choosebox').children().click(function(){
+		var num=$(this).index();
+		$('.l-followbox').children().eq(prenum).removeClass('l-follow');
+		$('.l-followbox').children().eq(num).addClass('l-follow');
+		prenum=num;
+	});
 
+	//食物hover
+	$('.l-food').hover(function(){
+		$('.l-foodpiccover').animate({opacity:1},300);
+	},function() {
+		$('.l-foodpiccover').animate({opacity:0},300);
+	});
 
-		$('.l-food').hover(function(){
-			$('.l-foodpiccover').animate({opacity:1},300);
-		},function() {
-			$('.l-foodpiccover').animate({opacity:0},300);
-		});
-		$('.l-foodpiccover').hover(function(){
-			$(this).animate({opacity:1},300);
-		},function() {
-			$(this).animate({opacity:0},300);
-		});
+	$('.l-foodpiccover').hover(function(){
+		$(this).animate({opacity:1},300);
+	},function() {
+		$(this).animate({opacity:0},300);
+	});
 
+	//加载更多
+	$('.l-more').click(function(){
+		var foodcnt=$('.l-foodcnt:last').clone();
+		$(".l-foodcnt:last").after(foodcnt);
+	});
 
-		$('.l-more').click(function(){
-			var foodcnt=$('.l-foodcnt:last').clone();
-			$(".l-foodcnt:last").after(foodcnt);
-		});
-
-
-		$('.l-love').click(function(){
-			var love=$('.l-love').html();
-			love=love-'0'+1;
-			$('.l-love').html(love);
-		});
-
+	//love
+	$('.l-love').click(function(){
+		var love=$(this).html();
+		love=love-'0'+1;
+		$(this).html(love);
+	});
 
 }
