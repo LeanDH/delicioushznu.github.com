@@ -152,6 +152,7 @@ li {
 	background: rgb(76,76,76);
     position: absolute; 
 	bottom: 0;
+	cursor: pointer;
 }
 #b04 #al {
  right: 120px;
@@ -185,7 +186,7 @@ li {
 	height: 50px;
 }
 .l-intro-word {
-	width: 95%;
+	width: 65%;
 }
 .l-cnt {
 	display: flex;
@@ -359,8 +360,8 @@ li {
 }
 .l-food-menu-a .dots li { 
     display: inline-block; 
-    width: 10px; 
-    height: 5px; 
+    width: 20px; 
+    height: 10px; 
     margin: 0 4px; 
     text-indent: -999em; 
     border: 2px solid white; 
@@ -398,8 +399,8 @@ li {
 }
 .l-food-menu-n .dots li { 
     display: inline-block; 
-    width: 10px; 
-    height: 5px; 
+    width: 20px; 
+    height: 10px; 
     margin: 0 4px; 
     text-indent: -999em; 
     border: 2px solid white; 
