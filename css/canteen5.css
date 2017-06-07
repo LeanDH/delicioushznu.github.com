@@ -137,10 +137,30 @@ body {
 .l-store-intro {
 	height: 100%;
 	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:white;
 }
 .l-store-img {
 	height: 100%;
 	width: 50%;
+}
+.l-store-img-cpy {
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	height: 0;
+	width: 50%;
+	top: 0;
+	left: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	color: white;
+	opacity: 0;
+	transition: height 0.5s;
+	transition: width 0.5s;
 }
 .l-store-title {
 	height: 100px;
