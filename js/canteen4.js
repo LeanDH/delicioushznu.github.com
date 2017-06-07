@@ -7,6 +7,22 @@
 $(init);
 function init()
 {
+    $(".canteen-box").hide();
+    $(".canteen-box").css("height","0");
+
+    //食堂导航栏浮框
+    $(".b-canteen").hover(
+        function(){
+            $(".canteen-box").show();
+            $(".canteen-box").css("height","200px");
+        },
+        function(){
+            $(".canteen-box").hide();
+            $(".canteen-box").css("height","0");
+        }
+    );
+
+    
 	//顶部轮播
     var unslider04 = $('#b04').unslider({
         dots: true

@@ -12,6 +12,22 @@ var p;
 var name;
 var loc;
 var food_id="2_030";
+
+$(".canteen-box").hide();
+$(".canteen-box").css("height","0");
+
+//食堂导航栏浮框
+$(".b-canteen").hover(
+	function(){
+		$(".canteen-box").show();
+		$(".canteen-box").css("height","200px");
+	},
+	function(){
+		$(".canteen-box").hide();
+		$(".canteen-box").css("height","0");
+	}
+);
+
 function load()
 {
 		var xmlhttp;

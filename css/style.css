@@ -171,13 +171,14 @@ div {
 	width: 150px;
 	height: 60px;
 	margin-left: 100px;
+}
+.zyx-nav-shopcar a{
+	text-decoration:none;
 	color: #EB3F2F;
 	font-weight: bold;
 	text-align: center;
 	line-height: 60px;
 	font-size: 18px;
-
-/*	background-color: #EB3F2F;*/
 }
 .zyxtopbox-main {
 	display: flex;
@@ -224,8 +225,8 @@ div {
 {
 	box-sizing: border-box;
 	width: 50%;
-	height: 60px;
-	line-height: 60px;
+	height: 40px;
+	line-height: 40px;
 	text-align: center;
 	z-index: 0;
 	color:white;
@@ -262,7 +263,12 @@ div {
 .zyxnote-cnt1 ul {
 	list-style: none;
 }
-
+.zyxnote-cnt1 ul li a{
+	cursor: pointer;
+	color: white;
+	font-family: Microsoft Yahei,黑体;
+	text-decoration: none;
+}
 /*插件*/
 ul, ol { 
 	padding: 0;
