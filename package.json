@@ -1,0 +1,27 @@
+{
+  "name": "hznudelicious",
+  "version": "1.0.0",
+  "description": "this is a test",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeanDH/delicioushznu.github.com.git"
+  },
+  "author": "xld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeanDH/delicioushznu.github.com/issues"
+  },
+  "homepage": "https://github.com/LeanDH/delicioushznu.github.com#readme",
+  "devDependencies": {
+    "gulp-clean-css": "^3.4.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-smushit": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1"
+  }
+}
