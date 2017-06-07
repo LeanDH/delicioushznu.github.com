@@ -38,19 +38,23 @@ function init()
 	var lineCount = 3;
 	var img3DList = document.querySelectorAll(".l-food-img-3d");
 	var len = img3DList.length;
-	$('.l-choose-menu').children().click(function () {
-
+	$('.l-choose-menu').children().click(function(){
 	    for (var i = 0; i< len; i++){
-
-	      var colNum = parseInt(i/lineCount);
-	      var rowNum = i%lineCount;
-	      var delayTime = (colNum+rowNum)*100;
-
-	      img3DList[i].style.transition = ".3s "+delayTime+"ms linear";
-	      img3DList[i].style.transform = "rotateY("+180*clickTimes+"deg)";
-	     }
-
+	    	var colNum = parseInt(i/lineCount);
+	    	var rowNum = i%lineCount;
+	    	var delayTime = (colNum+rowNum)*100;
+	    	console.log('len');
+	    	img3DList[i].style.transition = ".3s "+delayTime+"ms linear";
+	    	img3DList[i].style.transform = "rotateY("+180*clickTimes+"deg)";
+	    }
 	    clickTimes++;
+	});
+
+	//菜品hover事件
+	$('.l-food-mask').hover(function(){
+		$(this).children().eq(clickTimes%2).css('display','flex');
+	},function(){
+		$(this).children().eq(clickTimes%2).css('display','none');
 	});
 
 	//like&cart
