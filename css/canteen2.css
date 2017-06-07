@@ -184,6 +184,7 @@
 	height: 0;
 	border: 2px solid #FF6767;
 	margin-bottom: 5px;
+
 }
 .l-menucnt {
 /*	height: 650px;*/
@@ -491,4 +492,13 @@
 .l-titlecntf-word {
 	width: 80%;
 	color: #3f3f30;	
+}
+.l-food-morning{
+	display: none;
+}
+.l-food-afternoon{
+	display: none;
+}
+.l-food-night{
+	display: none;
 }
