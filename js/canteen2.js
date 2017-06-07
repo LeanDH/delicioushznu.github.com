@@ -103,6 +103,8 @@ function init()
 	var prenum=0;
 	$('.l-choosebox').children().click(function(){
 		var num=$(this).index();
+		$('.l-menucnt').children().eq(prenum).hide();
+		$('.l-menucnt').children().eq(num).show();
 		$('.l-followbox').children().eq(prenum).removeClass('l-follow');
 		$('.l-followbox').children().eq(num).addClass('l-follow');
 		prenum=num;
