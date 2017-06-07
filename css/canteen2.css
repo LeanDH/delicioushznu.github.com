@@ -184,7 +184,6 @@
 	height: 0;
 	border: 2px solid #FF6767;
 	margin-bottom: 5px;
-
 }
 .l-menucnt {
 /*	height: 650px;*/
@@ -306,11 +305,14 @@
 .l-newfoodname {
 	height: 35px;
 	margin-top: 8px;
+	margin-left: -10px;
+	margin-right: 10px;
 	font-weight: 600;
-	font-size: 17px;	
+	font-size: 18px;	
 }
 .l-newfoodpric {
 	margin-top: 10px;
+	padding-left: -10px;
 	height: 35px;
 	font-size: 15px;
 }
@@ -493,12 +495,6 @@
 	width: 80%;
 	color: #3f3f30;	
 }
-.l-food-morning{
-	display: none;
-}
-.l-food-afternoon{
-	display: none;
-}
-.l-food-night{
+.l-food-normal{
 	display: none;
 }
