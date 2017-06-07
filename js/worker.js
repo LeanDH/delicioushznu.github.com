@@ -1,5 +1,19 @@
 $(document).ready(function() {
+    $(".canteen-box").hide();
+    $(".canteen-box").css("height","0");
 
+    //食堂导航栏浮框
+    $(".b-canteen").hover(
+      function(){
+        $(".canteen-box").show();
+        $(".canteen-box").css("height","200px");
+      },
+      function(){
+        $(".canteen-box").hide();
+        $(".canteen-box").css("height","0");
+      }
+    );
+  
     $('.heart').on("click",function() {
 
       var A=$(this).attr("id");
