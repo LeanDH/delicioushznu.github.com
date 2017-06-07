@@ -7,21 +7,20 @@
 
 .b-title
 {
-	height:60px;
-	width:100%;
-	top:0;
-	left: 0;
 	display: flex;
-	justify-content: center;
 	position: fixed !important;
+	left: 0;
+	top:0;
+	width:100%;
+	height:60px;
 	background:#fff;
+	justify-content: center;
 	box-shadow:10px 0px 10px rgba(0,0,0,0.3);
 	z-index:10;
 }
 .b-title ul
 {
 	height:60px;
-/*	width:990px;*/
 	margin:0px auto;
 }
 .b-title ul li
@@ -35,25 +34,26 @@
 .b-title ul li a.link
 {
 	display: inline-block;
-    vertical-align: top;
-    padding: 0px 24px;
+	position: relative;
     height: 60px;
+    padding: 0px 24px;
+    vertical-align: top;
     line-height: 60px;
-    font-size: 18px;
     color: #444;
+    font-size: 18px;
     font-family: Microsoft Yahei,黑体;
     font-weight: bold;
-    position: relative;
+    
 }
 .b-title ul li a.link strong
 {
-	font-weight:bold;
 	display:inline-block;
-	vertical-align:top;
 	*display:inline;
 	*zoom:1;
 	width:60px;
 	height:60px;
+	vertical-align:top;
+	font-weight:bold;
 	text-align: center;
 }
 .b-title ul li:hover
@@ -64,25 +64,18 @@
 .b-current
 {
 	display: inline-block;
+	height: 60px;
     vertical-align: top;
-    height: 60px;
 }
-.b-title ul li.b-shopping a strong
+.b-title ul li.b-canteen a strong
 {
-	border-bottom:4px solid #ff3232;
 	height:56px;
 	overflow:hidden;
+	border-bottom:4px solid #ff3232;
 }
-/*.b-canteen
-{
-	width:80px;
-}*/
 .canteen-box
 {
 	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
     left: 0;
     top: 0;
     width: 100px;
@@ -90,14 +83,17 @@
     margin-left: 4px;
     border: 2px solid #d1ecff; 
     background: white;
+    flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
     transition: height 0.5s;
 }
 .canteen-box a
 {
 	margin:5px;
+	color: black;
 	font-weight: bold;
 	font-size: 14px;
-	color: black;
  	text-decoration: none;
 }
 .canteen-box a:hover
