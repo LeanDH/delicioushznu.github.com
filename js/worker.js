@@ -1,5 +1,19 @@
 $(document).ready(function() {
+    $(".canteen-box").hide();
+    $(".canteen-box").css("height","0");
 
+    //食堂导航栏浮框
+    $(".b-canteen").hover(
+      function(){
+        $(".canteen-box").show();
+        $(".canteen-box").css("height","200px");
+      },
+      function(){
+        $(".canteen-box").hide();
+        $(".canteen-box").css("height","0");
+      }
+    );
+  
     $('.heart').on("click",function() {
 
       var A=$(this).attr("id");
@@ -210,7 +224,18 @@ $(document).ready(function() {
 });
 
 function alertMessage(){
-  alert("为了不侵犯叔叔阿姨的肖像权，最后还是决定用一些食物的照片来代替头像");
+   layui.use(['layer', 'form'], function(){
+      var layer = layui.layer
+      ,form = layui.form();
+      
+      layer.open({
+        type: 1,
+        area: ['300px', '150px'],
+        shadeClose: true, //点击遮罩关闭
+        content: '\<\div style="padding:20px;">为了不侵犯叔叔阿姨的肖像权，最后还是决定用一些食物的照片来代替头像\<\/div>'
+      });
+      //layer.alert('为了不侵犯叔叔阿姨的肖像权，最后还是决定用一些食物的照片来代替头像')
+    });
 };
 
 function niceIn(prop){
