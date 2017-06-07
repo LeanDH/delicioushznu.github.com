@@ -5,32 +5,36 @@
  * @date    2017-05-16 20:57:21
  * @version $Id$
  */
-.b-title{
-	height:60px;
-	width:100%;
-	top:0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	position: fixed !important;
-	background:#fff;
-	box-shadow:10px 0px 10px rgba(0,0,0,0.3);
-	z-index:10;
+.b-title
+{
+    height:60px;
+    width:100%;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed !important;
+    background:#fff;
+    box-shadow:10px 0px 10px rgba(0,0,0,0.3);
+    z-index:10;
 }
-.b-title ul{
-	height:60px;
-/*	width:990px;*/
-	margin:0px auto;
+.b-title ul
+{
+    height:60px;
+/*  width:990px;*/
+    margin:0px auto;
 }
-.b-title ul li{
-	display:inline-block;
-	vertical-align:top;
-	*display:inline;
-	*zoom:1;
-	height:60px;
+.b-title ul li
+{
+    display:inline-block;
+    vertical-align:top;
+    *display:inline;
+    *zoom:1;
+    height:60px;
 }
-.b-title ul li a.link{
-	display: inline-block;
+.b-title ul li a.link
+{
+    display: inline-block;
     vertical-align: top;
     padding: 0px 24px;
     height: 60px;
@@ -41,27 +45,65 @@
     font-weight: bold;
     position: relative;
 }
-.b-title ul li a.link strong{
-	font-weight:bold;
-	display:inline-block;
-	vertical-align:top;
-	*display:inline;
-	*zoom:1;
-	height:60px;
+.b-title ul li a.link strong
+{
+    font-weight:bold;
+    display:inline-block;
+    vertical-align:top;
+    *display:inline;
+    *zoom:1;
+    width:60px;
+    height:60px;
+    text-align: center;
 }
-.b-title ul li:hover{
-	cursor:pointer;
-	background:#fafafa;
+.b-title ul li:hover
+{
+    cursor:pointer;
+    background:#fafafa;
 }
-.b-current{
-	display: inline-block;
+.b-current
+{
+    display: inline-block;
     vertical-align: top;
     height: 60px;
 }
-.b-title ul li.b-canteen a strong{
-	border-bottom:4px solid #ff3232;
-	height:56px;
-	overflow:hidden;
+.b-title ul li.b-shopping a strong
+{
+    border-bottom:4px solid #ff3232;
+    height:56px;
+    overflow:hidden;
+}
+/*.b-canteen
+{
+    width:80px;
+}*/
+.canteen-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 200px;
+    margin-left: 4px;
+    border: 2px solid #d1ecff; 
+    background: white;
+    transition: height 0.5s;
+}
+.canteen-box a
+{
+    margin:5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+.canteen-box a:hover
+{
+    color: #EB3F2F;
+    text-decoration: none;
 }
 
 

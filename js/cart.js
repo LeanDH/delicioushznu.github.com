@@ -8,6 +8,20 @@
  //一开始part2和part3都是隐藏状态
 $(".part2check").hide();
 $(".part3confirm").hide();
+$(".canteen-box").hide();
+$(".canteen-box").css("height","0");
+
+//食堂导航栏浮框
+$(".b-canteen").hover(
+	function(){
+		$(".canteen-box").show();
+		$(".canteen-box").css("height","200px");
+	},
+	function(){
+		$(".canteen-box").hide();
+		$(".canteen-box").css("height","0");
+	}
+);
 
 /*复选框全选或全不选效果*/
 function selectAll()
@@ -116,6 +130,7 @@ $(".detail-delete").click(function()
     $(this).parent().remove();
     productCount();
 });
+
 
 //悬浮到鼠标所在行时改变颜色
 $(".detail").hover(

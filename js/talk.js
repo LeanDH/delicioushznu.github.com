@@ -2,6 +2,21 @@
  * Created by dell on 2017/5/31.
  */
 $ (document).ready(function() {
+    $(".canteen-box").hide();
+    $(".canteen-box").css("height","0");
+
+    //食堂导航栏浮框
+    $(".b-canteen").hover(
+        function(){
+            $(".canteen-box").show();
+            $(".canteen-box").css("height","200px");
+        },
+        function(){
+            $(".canteen-box").hide();
+            $(".canteen-box").css("height","0");
+        }
+    );
+        
     // $(".part2createnew").css("display","none");
     $(".createnew").click(function() {
         $(".part1").css("display","none");

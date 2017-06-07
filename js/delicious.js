@@ -12,3 +12,18 @@ $('.l-foodchoose-hotchoose-cnt').children().click(function(){
 	spicy=$('.l-foodchoose-hotchoose-cnt').children().index(this);
 	$('.l-foodchoose-hotchoose-cnt').children().eq(spicy).css('border','1px solid red');
 });
+
+$(".canteen-box").hide();
+$(".canteen-box").css("height","0");
+
+//食堂导航栏浮框
+$(".b-canteen").hover(
+	function(){
+		$(".canteen-box").show();
+		$(".canteen-box").css("height","200px");
+	},
+	function(){
+		$(".canteen-box").hide();
+		$(".canteen-box").css("height","0");
+	}
+);

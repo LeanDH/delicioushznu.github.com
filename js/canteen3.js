@@ -7,6 +7,22 @@
 $(init);
 function init()
 {
+
+	$(".canteen-box").hide();
+	$(".canteen-box").css("height","0");
+
+	//食堂导航栏浮框
+	$(".b-canteen").hover(
+		function(){
+			$(".canteen-box").show();
+			$(".canteen-box").css("height","200px");
+		},
+		function(){
+			$(".canteen-box").hide();
+			$(".canteen-box").css("height","0");
+		}
+	);
+
 	//切换菜单
 	var pre=0;
 	$('.l-menu-title').children().eq(pre).css('color','#EB3F2F');
