@@ -210,7 +210,7 @@ $(document).ready(function() {
 });
 
 function alertMessage(){
-  alert("hhh");
+  alert("为了不侵犯叔叔阿姨的肖像权，最后还是决定用一些食物的照片来代替头像");
 };
 
 function niceIn(prop){
