@@ -12,56 +12,55 @@
     display: flex;
     position: fixed !important;
     left: 0;
-    top:0;
-    width:100%;
-    height:60px;
-    background:#fff;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
     justify-content: center;
-    box-shadow:10px 0px 10px rgba(0,0,0,0.3);
-    z-index:10;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.3);
+    z-index: 10;
 }
 .b-title ul
 {
-    height:60px;
-    margin:0px auto;
+    height: 60px;
+    margin: 0 auto;
 }
 .b-title ul li
 {
-    display:inline-block;
-    vertical-align:top;
-    *display:inline;
-    *zoom:1;
-    height:60px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    height: 60px;
 }
 .b-title ul li a.link
 {
     display: inline-block;
     position: relative;
     height: 60px;
-    padding: 0px 24px;
+    padding: 0 24px;
     vertical-align: top;
     line-height: 60px;
     color: #444;
     font-size: 18px;
     font-family: Microsoft Yahei,黑体;
     font-weight: bold;
-    
 }
 .b-title ul li a.link strong
 {
-    display:inline-block;
-    *display:inline;
-    *zoom:1;
-    width:60px;
-    height:60px;
-    vertical-align:top;
-    font-weight:bold;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 60px;
+    height: 60px;
+    vertical-align: top;
+    font-weight: bold;
     text-align: center;
 }
 .b-title ul li:hover
 {
-    cursor:pointer;
-    background:#fafafa;
+    cursor: pointer;
+    background: #fafafa;
 }
 .b-current
 {
@@ -71,9 +70,9 @@
 }
 .b-title ul li.b-canteen a strong
 {
-    height:56px;
-    overflow:hidden;
-    border-bottom:4px solid #ff3232;
+    height: 56px;
+    border-bottom: 4px solid #ff3232;
+	overflow: hidden;
 }
 .canteen-box
 {
@@ -92,7 +91,7 @@
 }
 .canteen-box a
 {
-    margin:5px;
+    margin: 5px;
     color: black;
     font-weight: bold;
     font-size: 14px;
@@ -115,9 +114,9 @@
 	padding-top: 80px;
 }
 .l-intro {
+	display: flex;
 	height: 450px;
 	width: 700px;
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -127,14 +126,14 @@
 	width: 200px;
 	background-image: url('../img/spoon.jpg');
 	background-size: 200px 450px;
-	background-repeat:no-repeat;	
+	background-repeat: no-repeat;
 }
 .l-chopsticks {
 	height: 450px;
 	width: 200px;
 	background-image: url('../img/chopsticks.jpg');
 	background-size: 180px 500px;
-	background-repeat:no-repeat;	
+	background-repeat: no-repeat;
 }
 .l-bigg {
 	height: 500px;
@@ -145,71 +144,71 @@
 	display: none;
 }
 .l-bigcnt {
-	height: 450px;
-	width: 650px;
+	display: none;
 	position: absolute;
 	top: 15%;
 	left: 24.5%;
-	display: none;
+	height: 450px;
+	width: 650px;
 }
 .l-introcpy {
-	height: 100%;
-	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	width: 100%;
 	background-color: rgba(0,0,0,0.4);	
 }
 .l-intro-word {
+	display: flex;
+	position: absolute;
 	height: 100%;
 	width: 100%;
-	position: absolute;
 	top: 0;
 	left: 0;
-	display: flex;
 	align-items: center;
 	flex-direction: column;
 	color: #EB3F2F;		
 }
 .l-intro1 {
+	position: absolute;
 	height: 100%;
 	width: 100%;
-	position: absolute;
 	top: 0;
 	left: 0;
 	background-image: url('../img/canteen33.jpg');
 	background-size: 100% 100%;
-	background-repeat:no-repeat;		
+	background-repeat: no-repeat;
 }
 .l-intro2 {
-	height: 100%;
-	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	width: 100%;
 	background-image: url('../img/gaijiaofan.jpg');
 	background-size: 100% 100%;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
 .l-intro3 {
-	height: 100%;
-	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	width: 100%;
 	background-image: url('../img/man.jpg');
 	background-size: 100% 100%;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
 .l-intro4 {
-	height: 100%;
-	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	width: 100%;
 	background-image: url('../img/woman.jpg');
 	background-size: 100% 100%;
-	background-repeat:no-repeat;	
+	background-repeat: no-repeat;
 }
 .l-word {
 	font-size: 15px;
@@ -225,19 +224,19 @@
 	position: relative;
 }
 .l-intro-img-cnt {
-	height: 200px;
-	width: 335px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 200px;
+	width: 335px;
 }
 .l-intro-word-cnt {
-	height: 200px;
-	width: 335px;
+	display: flex;
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: flex;
+	height: 200px;
+	width: 335px;
 	align-items: center;
 	justify-content: center;
 	color: white;
@@ -251,11 +250,11 @@
 }
 .l-logo {
 	position: absolute;
+	display: flex;
 	left: 50%;
 	height: 120px;
 	width: 200px;
-	display: flex;
-	transform:translate(-50%,0);
+	transform: translate(-50%,0);
 	align-items: center;
 	justify-content: center;
 	font-size: 30px;
@@ -265,12 +264,12 @@
 }
 
 .l-menu-title {
+	display: flex;
 	height: 60px;
 	width: 80%;
 	margin: auto;
 	border-top: 2px solid gray;
 	border-bottom: 2px solid gray;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 18px;
@@ -297,15 +296,16 @@
 	justify-content: center;
 }
 .l-circle {
+	position: relative;
 	height: 250px;
 	width: 250px;
+	margin: 50px;
 	border-radius: 250px;
 	background-color: #ccc;
-	margin: 50px;
-	position: relative;
 }
 .l-circle-son {
 	position: absolute;
+	display: flex;
 	top: 0;
 	left: 0;
 	height: 0;
@@ -314,7 +314,6 @@
 	opacity: 0;
 	transition: height 0.5s;
 	transition: width 0.5s;
-	display: flex;
     flex-direction: column;
     align-items: center;	
 	background-color: rgba(0,0,0,0.5);
@@ -326,30 +325,30 @@
     margin-bottom: 15px;
 }
 .l-food-price {
+	display: flex;
 	width: 100%;
     font-size: 18px;
 	color: white;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .l-fa {
+	display: flex;
 	color: white;
 	height: 80px;
 	width: 35%;
 	font-size: 20px;
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	cursor: pointer;
 }
 .l-circle-son a{
+	display: block;
     color: #fff;
     text-decoration: none;
     font-size: 12px;
     background-color: red;
     width: 70px;
-    display: block;
     text-align: center;
     height: 18px;
     line-height: 18px;
@@ -365,10 +364,10 @@
 	border-radius: 50%;
 } 
 .l-square {
+	display: flex;
 	height: 300px;
 	width: 185px;
 	margin: 50px;
-	display: flex;
 	overflow: hidden;
 	flex-direction: column;
 	transition: box-shadow 0.5s;
@@ -378,9 +377,9 @@
 	width: 100%;
 }
 .l-food-itro {
+	display: flex;
 	height: 60px;
 	width: 100%;
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 30px 0 30px;
@@ -396,12 +395,12 @@
 	color: rgb(255,180,0);
 }
 .l-nav {
+	display: flex;
 	position: relative;
 	left: 0;
 	top: 20%;
 	height: 20%;
 	width: 100%;
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 30px 0 30px; 
@@ -412,8 +411,8 @@
 .l-square2 {
 	height: 300px;
 	width: 300px;
-	background-color: #ccc;	
 	margin: 60px;
+	background-color: #ccc;
 /*	transition: padding 0.5s;*/
 }
 .l-square2-img {
@@ -426,7 +425,7 @@
 .l-square2-intro {
 	position: relative;
 	top: -100%;
-	left: 0%;
+	left: 0;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -447,11 +446,11 @@
 	width: 100%;	
 }
 .l-fa-circle {
-	height: 0px;
-	width: 0px;
+	display: flex;
+	height: 0;
+	width: 0;
 	border: 1px solid white;
 	border-radius: 50px;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
@@ -472,9 +471,9 @@
 
 
 .l-food-afternoon {
+	display: none;
 	padding-top: 50px;
 	width: 100%;
-	display: none;	
 }
 .l-platecnt {
 	display: flex;
@@ -489,21 +488,21 @@
 	padding: 20px;		
 }
 .l-plate-1-img {
-	height: 100%;
-	width: 100%;
 	position: relative;
 	top: 0;
-	left: 0;	
+	left: 0;
+	height: 100%;
+	width: 100%;
 }
 
 .l-food-mask {
+	display: flex;
     position: relative;
     left: 0;
     top: -100%;
 	height: 100%;
 	width: 100%;
     background-color: rgba(0, 0, 0, .5);
-    display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 0;
@@ -514,17 +513,17 @@
     opacity: 1;	
 }
 .l-plate-1-price {
+	display: flex;
 	width: 100%;
     font-size: 18px;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .l-food-mask-name {
+	display: flex;
 	height: 20%;
 	width: 100%;
     font-size: 18px;
-	display: flex;
 	align-items: center;
 	justify-content: center;	
 }
@@ -553,9 +552,9 @@
 }
 
 .l-food-night {
+	display: none;
 	padding-top: 50px;
 	width: 100%;
-	display: none;	
 }
 .l-rotatel {
 	transition: .3s linear;
@@ -564,6 +563,6 @@
 }
 .l-rotater {
 	transition: .3s linear;
-	transform-origin:center center;
+	transform-origin: center center;
     transform: rotate(0deg);
 }
