@@ -6,44 +6,44 @@
  * @version $Id$
  */
 *{
-	margin: 0;
+  margin: 0;
 	padding: 0;
 }
 
 body {
-	background-color: rgb(245,246,235);
+	 background-color: rgb(245,246,235);
 }
 
 .b-title
 {
-	display: flex;
-	position: fixed !important;
-	left: 0;
-	top:0;
-	width:100%;
-	height:60px;
-	background:#fff;
-	justify-content: center;
-	box-shadow:10px 0px 10px rgba(0,0,0,0.3);
-	z-index:10;
+  	display: flex;
+  	position: fixed !important;
+  	left: 0;
+  	top:0;
+  	width:100%;
+  	height:60px;
+  	background:#fff;
+  	justify-content: center;
+  	box-shadow:10px 0px 10px rgba(0,0,0,0.3);
+  	z-index:10;
 }
 .b-title ul
 {
-	height:60px;
-	margin:0px auto;
+  	height:60px;
+  	margin:0 auto;
 }
 .b-title ul li
 {
-	display:inline-block;
-	vertical-align:top;
-	*display:inline;
-	*zoom:1;
-	height:60px;
+  	display:inline-block;
+  	vertical-align:top;
+  	*display:inline;
+  	*zoom:1;
+  	height:60px;
 }
 .b-title ul li a.link
 {
-	display: inline-block;
-	position: relative;
+  	display: inline-block;
+  	position: relative;
     height: 60px;
     padding: 0px 24px;
     vertical-align: top;
@@ -74,7 +74,7 @@ body {
 {
 	display: inline-block;
 	height: 60px;
-    vertical-align: top;
+  vertical-align: top;
 }
 .b-title ul li.b-canteen a strong
 {
@@ -85,17 +85,17 @@ body {
 .canteen-box
 {
 	display: flex;
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: 200px;
-    margin-left: 4px;
-    border: 2px solid #d1ecff; 
-    background: white;
-    flex-wrap: wrap;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 200px;
+  margin-left: 4px;
+  border: 2px solid #d1ecff; 
+  background: white;
+  flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
-    transition: height 0.5s;
+  transition: height 0.5s;
 }
 .canteen-box a
 {
@@ -112,11 +112,10 @@ body {
 }
 
 .l-welcom {
+  display: flex;
 	height: 100px;
 	width:100%;
-	/*background-color: rgb(132,242,104);*/
 	margin-top: 100px;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
