@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>worker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\lib\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\lib\font-awesome\css\font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="..\css\worker.css">
+    <script type="text/javascript" src="..\lib\jquery\jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../lib/layui/layui.js"></script>
+    <script type="text/javascript" src="..\js\j-accordin.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.accordion').jaccordion();
+        });
+    </script>
+</head>
+<body onload="alertMessage()">
+    <!--PART1：导航栏部分-->
+    <div class="container-fluid topnav">
+        <div class="b-title">
+            <ul id="b-title-nav">
+                <li class="b-current">
+                    <a href="../index.html" class="link">
+                        <strong>首页</strong>
+                    </a>
+                </li>
+                <li class="b-canteen">
+                    <a href="" class="link">
+                        <strong>食堂</strong>
+                    </a>
+                    <div class="canteen-box">
+                        <a href="canteen1.html">一号食堂</a>
+                        <a href="canteen2.html">二号食堂</a>
+                        <a href="canteen3.html">三号食堂</a>
+                        <a href="canteen4.html">四号食堂</a>
+                        <a href="canteen5.html">五号食堂</a>
+                    </div>
+                </li>
+                <li class="b-others">
+                    <a href="others.html" class="link">
+                        <strong>周边</strong>
+                    </a>
+                </li>
+                <li class="b-worker">
+                    <a href="worker.html" class="link">
+                        <strong>员工墙</strong>
+                    </a>
+                </li>
+                <li class="b-shopping">
+                    <a href="cart.html" class="link">
+                        <strong>购物车</strong>
+                    </a>
+                </li>
+                <li class="b-talk">
+                    <a href="talk.html" class="link">
+                        <strong>吐槽</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <div class="b-title">
+            <ul id="b-title-nav">
+                <li class="b-current">
+                    <a href="../index.html" class="link">
+                        <strong>首页</strong>
+                    </a>
+                </li>
+                <li class="b-canteen">
+                    <a href="" class="link">
+                        <strong>食堂</strong>
+                    </a>
+                    <div class="canteen-box">
+                        <a href="canteen1.html">一号食堂</a>
+                        <a href="canteen2.html">二号食堂</a>
+                        <a href="canteen3.html">三号食堂</a>
+                        <a href="canteen4.html">四号食堂</a>
+                        <a href="canteen5.html">五号食堂</a>
+                    </div>
+                </li>
+                <li class="b-others">
+                    <a href="others.html" class="link">
+                        <strong>周边</strong>
+                    </a>
+                </li>
+                <li class="b-worker">
+                    <a href="worker.html" class="link">
+                        <strong>员工墙</strong>
+                    </a>
+                </li>
+                <li class="b-shopping">
+                    <a href="cart.html" class="link">
+                        <strong>购物车</strong>
+                    </a>
+                </li>
+                <li class="b-talk">
+                    <a href="talk.html" class="link">
+                        <strong>吐槽</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="b-top"></div>
+    </div>
+
+    <!--PART2：页面的大标题-->
+    <div class="title">
+        <section class="cd-intro">
+            <div class="cd-intro-content bouncy">
+                <h1>食堂达人</h1>
+                <p>这里有一群可亲可敬的阿姨和叔叔，他们是我们心目中的达人</p>
+            </div>
+        </section>
+    </div>
+
+    <!--PART3: 员工的展示（主体部分）-->
+    <div class="container">
+        <div class="row ui-row-body">
+
+            <!--PART3-1: 厨房达人-->
+            <div class="col-md-4">
+                <div class="ui-head">
+                    <div class="ui-head-center">
+                        <img src="..\img\winner.png">
+                        <span>厨房达人 TOP6</span>
+                    </div>
+                </div>
+                <div class="ui-body">
+                    <div class="container ui-body-item">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="..\img\w1.png">
+                            </div>
+                            <div class="col-md-2 ui-body-head1">
+                                <img src="..\img\head1.png">
+                            </div>
+                            <div class="col-md-7 ui-body-message1">
+                                <p>张阿姨</p>
+                                <p class="message-text">4号餐厅早餐的小点心</p>
+                            </div>
+                            <div class="col-md-2 ui-body-feed ui-feed1" id="heart">
+                                <div class="heart" id="like1" rel="like" title="喜欢就给ta点个赞吧"></div>
+                                <div class="likeCount" id="likeCount1">223</div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="ui-body-item container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="..\img\w2.png">
+                            </div>
+                            <div class="col-md-2 ui-body-head1">
+                                <img src="..\img\head2.png">
+                            </div>
+                            <div class="col-md-7 ui-body-message1">
+                                <p>王阿姨</p>
+                                <p class="message-text">5号餐厅香喷喷的缙云烧饼</p>
+                            </div>
+                            <div class="col-md-2 ui-body-feed ui-feed1" id="heart">
+                                <div class="heart" id="like2" rel="like" title="喜欢就给ta点个赞吧"></div>
+                                <div class="likeCount" id="likeCount2">212</div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="ui-body-item container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="..\img\w3.png">
+                            </div>
+                            <div class="col-md-2 ui-body-head1">
+                                <img src="..\img\head3.png">
+                            </div>
+                            <div class="col-md-7 ui-body-message1">
+                                <p>李阿姨</p>
+                                <p class="message-text">5号餐厅的麻辣烫</p>
+                            </div>
+                            <div class="col-md-2 ui-body-feed ui-feed1" id="heart">
+                                <div class="heart" id="like3" rel="like" title="喜欢就给ta点个赞吧"></div>
+                                <div class="likeCount" id="likeCount3">198</div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="ui-body-item container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="..\img\w4.png">
+                            </div>
+                            <div class="col-md-2 ui-body-head1">
+                                <img src="..\img\head4.png">
+                            </div>
+                            <div class="col-md-7 ui-body-message1">
+                                <p>张阿姨</p>
+                                <p class="message-text">5号餐厅的黄焖鸡米饭</p>
+                            </div>
+                            <div class="col-md-2 ui-body-feed ui-feed1" id="heart">
+                                <div class="heart" id="like4" rel="like" title="喜欢就给ta点个赞吧"></div>
+                                <div class="likeCount" id="likeCount4">186</div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="ui-body-item container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="..\img\w5.png">
+                            </div>
+                            <div class="col-md-2 ui-body-head1">
+                                <img src="..\img\head5.png">
+                            </div>
+                            <div class="col-md-7 ui-body-message1">
+                                <p>罗阿姨</p>
+                                <p class="message-text">2号餐厅的凉拌青丝面</p>
+                            </div>
+                            <div class="col-md-2 ui-body-feed ui-feed1" id="heart">
+                                <div class="heart" id="like5" rel="like" title="喜欢就给ta点个赞吧"></div>
+                                <div class="likeCount" id="likeCount5">160</div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="ui-body-item container" style="border-bottom: 1px solid #fff">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="..\img\w6.png">
+                            </div>
+                            <div class="col-md-2 ui-body-head1">
+                                <img src="..\img\head6.png">
+                            </div>
+                            <div class="col-md-7 ui-body-message1">
+                                <p>陈叔叔</p>
+                                <p class="message-text">3号餐厅的酱鸭腿</p>
+                            </div>
+                            <div class="col-md-2 ui-body-feed ui-feed1" id="heart">
+                                <div class="heart" id="like6" rel="like" title="喜欢就给ta点个赞吧"></div>
+                                <div class="likeCount" id="likeCount6">123</div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PART3-2: 窗口达人-->
+            <div class="col-md-4">
+                <div class="ui-head">
+                    <div class="ui-head-center">
+                        <span>窗口达人（十宗最）</span>
+                    </div>
+                </div>
+                <div class="ui-body accordion_container">
+                    <div class="accordion">
+
+                        <div class="first current">
+                            <div class="content">
+                                <img src="..\img\head7.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">李叔叔</p>
+                                    <p>不是很软也不是很硬，有嚼劲</p>
+                                    <p id="btn1">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <span>1. 面煮得最好吃的叔叔（3号餐厅）</span>
+                            </div>
+                        </div>
+                        
+                        <div class="second">
+                            <div class="content second">
+                                <img src="..\img\head8.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">张阿姨</p>
+                                    <p>糖醋里脊真的很好吃</p>
+                                    <p id="btn2">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>2. 糖醋里脊给的最多的阿姨（3号餐厅）</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="third">
+                            <div class="content third">
+                                <img src="..\img\head9.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">李小哥</p>
+                                    <p>总之长的真的还可以啦</p>
+                                    <p id="btn3">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>3. 长得最帅的小哥（5号餐厅）</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="four">
+                            <div class="content four">
+                                <img src="..\img\head10.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">王阿姨</p>
+                                    <p>不管多远，阿姨都会帮你打</p>
+                                    <p id="btn4">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>4. 最不怕麻烦的阿姨（3号餐厅）</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="five">
+                            <div class="content five">
+                                <img src="..\img\head11.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">林姐姐</p>
+                                    <p>很有特点哦</p>
+                                    <p id="btn5">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>5. 最好看的小姐姐（1号餐厅）</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="six">
+                            <div class="content six">
+                                <img src="..\img\head12.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">赵阿姨</p>
+                                    <p>适合男生、适合肚子极度饿</p>
+                                    <p id="btn6">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>6. 打饭最多的阿姨（2号餐厅）</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="seven">
+                            <div class="content seven">
+                                <img src="..\img\head13.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">林阿姨</p>
+                                    <p>打饭的一把老手，保你马上吃到饭</p>
+                                    <p id="btn7">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>7. 打饭速度最快的阿姨（3号餐厅）</strong>
+                            </div>
+                        </div>
+
+                        <div class="eight">
+                            <div class="content eight">
+                                <img src="..\img\head14.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">王阿姨</p>
+                                    <p>阿姨给我的金针菇年糕超级满</p>
+                                    <p id="btn8">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>8. 最暖心的阿姨（5号餐厅）</strong>
+                            </div>
+                        </div>
+
+                        <div class="nine">
+                            <div class="content nine">
+                                <img src="..\img\head15.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">张阿姨</p>
+                                    <p>总是一脸笑容，非常和蔼</p>
+                                    <p id="btn9">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>9. 最耐心的阿姨（3号餐厅）</strong>
+                            </div>
+                        </div>
+
+                        <div class="ten">
+                            <div class="content ten">
+                                <img src="..\img\head16.png" />
+                                <div class="word" >
+                                    <p style="font-size: 15px; font-weight: bold">何阿姨</p>
+                                    <p>看起来就让人很亲近</p>
+                                    <p id="btn10">
+                                        <i class="fa fa-thumbs-up iconfont" title="赞成" value="false"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <strong>10. 最有眼缘的阿姨（2号餐厅）</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PART3-1: 后勤达人-->
+            <div class="col-md-4">
+                <div class="ui-head">
+                    <div class="ui-head-center" style="padding-left: 38%">
+                        <span>后勤达人</span>
+                    </div>
+                </div>
+                <div class="ui-body">
+                    <div class="ui-body-item3">
+                        <p>恕园7食堂</p>
+                    </div>
+                    <div class="ui-body-item1">
+                        <div class="ui-body-head ui-img1">
+                            <div class="ui-body-info">
+                                <p>张阿姨</p>
+                            </div>
+                        </div> 
+                        <div class="ui-body-head ui-img2">
+                            <div class="ui-body-info">
+                                <p>吕阿姨</p>
+                            </div>
+                        </div>
+                        <div class="ui-body-head ui-img3">
+                            <div class="ui-body-info">
+                                <p>李阿姨</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-body-item2">
+                        <div class="ui-body-head ui-img4">
+                            <div class="ui-body-info">
+                                <p>孙叔叔</p>
+                            </div>
+                        </div> 
+                        <div class="ui-body-head ui-img5">
+                            <div class="ui-body-info">
+                                <p>杨阿姨</p>
+                            </div>
+                        </div>
+                        <div class="ui-body-head ui-img6">
+                            <div class="ui-body-info">
+                                <p>张阿姨</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-body-item2">
+                        <div class="ui-body-head ui-img7">
+                            <div class="ui-body-info">
+                                <p>张阿姨</p>
+                            </div>
+                        </div> 
+                        <div class="ui-body-head ui-img8">
+                            <div class="ui-body-info">
+                                <p>林阿姨</p>
+                            </div>
+                        </div>
+                        <div class="ui-body-head ui-img9">
+                            <div class="ui-body-info">
+                                <p>陈阿姨</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-body-item4">
+                        <p>恕园2和清真</p>
+                    </div>
+                    <div class="ui-body-item1">
+                        <div class="ui-body-head ui-img10">
+                            <div class="ui-body-info">
+                                <p>许阿姨</p>
+                            </div>
+                        </div> 
+                        <div class="ui-body-head ui-img11">
+                            <div class="ui-body-info">
+                                <p>张阿姨</p>
+                            </div>
+                        </div>
+                        <div class="ui-body-head ui-img12">
+                            <div class="ui-body-info">
+                                <p>李阿姨</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-body-item2">
+                        <div class="ui-body-head ui-img13">
+                            <div class="ui-body-info">
+                                <p>孙阿姨</p>
+                            </div>
+                        </div> 
+                        <div class="ui-body-head ui-img14">
+                            <div class="ui-body-info">
+                                <p>王阿姨</p>
+                            </div>
+                        </div>
+                        <div class="ui-body-head ui-img15">
+                            <div class="ui-body-info">
+                                <p>何阿姨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="..\lib\bootstrap\js\bootstrap.min.js"></script>
+<script src="..\js\modernizr.js"></script>
+<script type="text/javascript" src="..\js\worker.js"></script>
+</html>

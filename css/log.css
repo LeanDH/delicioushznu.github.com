@@ -1,0 +1,52 @@
+.cont {
+	width: 500px;
+	height: 400px;
+	margin:auto;
+	margin-top: 100px;
+	text-align: center;
+	background-color: white;
+	border: 2px solid orange;
+	border-radius: 10px;
+}
+.input {
+	width: 300px;
+	height: 35px;
+	margin-left:30px;
+	border-radius: 5px;
+	border:2px solid orange;
+
+}
+.input:focus {
+	border-color: red;
+	outline: none;
+}
+h2 {
+	padding-top: 40px;
+	color: orange;
+}
+h5 {
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: orange;
+	font-size: 16px;
+	font-weight: normal;
+}
+.button {
+	position: relative;
+	left: 350px;
+	width: 100px;
+	height: 40px;
+	margin-top: 35px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	background-color: orange;
+	border: 2px solid orange;
+	color: white;
+}
+.button:hover {
+	background-color: white;
+	color: orange;
+}
