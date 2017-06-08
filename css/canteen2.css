@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /**
  * 
  * @authors Your Name (you@example.org)
@@ -103,6 +103,10 @@
 	align-content: center;
 	justify-content: center;
     transition: height 0.5s;
+}
+.foodimg {
+	width:100%;
+        height:100%;
 }
 .canteen-box a
 {
