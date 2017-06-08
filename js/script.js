@@ -1,134 +1,127 @@
 function Updatadb(num,food_id,taste,size)
 {
     var xmlhttp;
-        if (window.XMLHttpRequest)
-          {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-          }
-          else
-          {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-        xmlhttp.onreadystatechange=function()
+    if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+          // alert(xmlhttp.responseText);
+          var ans=xmlhttp.responseText;
+          if(ans==false)
           {
-              if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                   
-                  // alert(xmlhttp.responseText); 
-                  var ans=xmlhttp.responseText;
-                  if(ans==false)
-                  {
-                    alert("please login");
-                  }       
-                }
+            alert("please login");
           }
-            var way=1;
-            xmlhttp.open("GET","http://localhost:8080/phpbin/shop.php?food_id="+food_id+"&&num="+num+"&&taste="+taste+"&&size="+size,true);
-            xmlhttp.send(); 
+        }
+    }
+    var way=1;
+    xmlhttp.open("GET","http://localhost:8080/phpbin/shop.php?food_id="+food_id+"&&num="+num+"&&taste="+taste+"&&size="+size,true);
+    xmlhttp.send();
 }
 
 function loaduser()
 {
     var xmlhttp;
-        if (window.XMLHttpRequest)
-          {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-          }
-          else
-          {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-        xmlhttp.onreadystatechange=function()
-          {
-              if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                   
-                   //alert(xmlhttp.responseText);
-                   if(xmlhttp.responseText!=false)
-                   {    $('.words').html(xmlhttp.responseText);
-                        $('.words').attr('href','index.html'); 
-                        $('.zyx-nav-userload a').html("退出");
-                        $('.zyx-nav-userinf p').html(xmlhttp.responseText+"<br>"+"欢迎来到HZNU餐厅");
-                        $('.zyx-nav-userlink').html(xmlhttp.responseText);
-                       
-                   }
-                   else
-                   {
-                        //alert("w");
-                   }
-                }
-          }
-            var way=1;
-            xmlhttp.open("GET","http://localhost:8080/phpbin/index.php?way="+way,true);
-            xmlhttp.send();
+    if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+           //alert(xmlhttp.responseText);
+           if(xmlhttp.responseText!=false)
+           {    $('.words').html(xmlhttp.responseText);
+                $('.words').attr('href','index.html');
+                $('.zyx-nav-userload a').html("退出");
+                $('.zyx-nav-userinf p').html(xmlhttp.responseText+"<br>"+"欢迎来到HZNU餐厅");
+                $('.zyx-nav-userlink').html(xmlhttp.responseText);
+           }
+           else
+           {
+                //alert("w");
+           }
+        }
+    }
+    var way=1;
+    xmlhttp.open("GET","http://localhost:8080/phpbin/index.php?way="+way,true);
+    xmlhttp.send();
 }
 function loadmordish(start)
 {
     var xmlhttp;
-        if (window.XMLHttpRequest)
-          {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-          }
-          else
-          {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-        xmlhttp.onreadystatechange=function()
-          {
-              if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                   
-                   //alert(xmlhttp.responseText);
-                   var str=xmlhttp.response;
-                  // alert(str+"　"+start+" "+way);
-                   var obj=eval('(' + str + ')');
-                   for(var i=0;i<3;i++)
-                   {
-                    $('.zyxbuild7-dish-img').eq(start).attr('src','img/'+obj.dataList[i].food_id+'.jpg');
-                    $('.zyxdish-name').eq(start).html("<br>"+obj.dataList[i].food_name+"<br><br>"+obj.dataList[i].price+"元<br><br");
-                    //$('.zyxdish-name').eq(start).html();
-                    start++;
-                   }
-                   
-                }
-          }
-            var way=start/3+2;
-            xmlhttp.open("GET","http://localhost:8080/phpbin/index.php?way="+way+"t="+Math.random(),true);
-            xmlhttp.send();
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+           //alert(xmlhttp.responseText);
+           var str=xmlhttp.response;
+          // alert(str+"　"+start+" "+way);
+           var obj=eval('(' + str + ')');
+           for(var i=0;i<3;i++)
+           {
+                $('.zyxbuild7-dish-img').eq(start).attr('src','img/'+obj.dataList[i].food_id+'.jpg');
+                $('.zyxdish-name').eq(start).html("<br>"+obj.dataList[i].food_name+"<br><br>"+obj.dataList[i].price+"元<br><br");
+                //$('.zyxdish-name').eq(start).html();
+                start++;
+           }
+        }
+    }
+    var way=start/3+2;
+    xmlhttp.open("GET","http://localhost:8080/phpbin/index.php?way="+way+"t="+Math.random(),true);
+    xmlhttp.send();
 }
 function loadmordish1(start)
 {
     var xmlhttp;
-        if (window.XMLHttpRequest)
-          {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-          }
-          else
-          {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-        xmlhttp.onreadystatechange=function()
-          {
-              if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                   
-                   //alert(xmlhttp.responseText);
-                   var str=xmlhttp.response;
-                   //alert(str+"　"+start+" "+way);
-                   var obj=eval('(' + str + ')');
-                   for(var i=0;i<3;i++)
-                   {
-                    $('.zyxbuild2-dish-img').eq(start).attr('src','img/'+obj.dataList[i].food_id+'.jpg');
-                    $('.zyxbuild2-dish-title').eq(start).html(obj.dataList[i].food_name+"<br>"+obj.dataList[i].price+"元");
-                   // $('.zyxbuild2-dish-title').eq(start).html("<br>"+obj.dataList[i].price+"元<br><br>");
-                    start++;
-                   }
-                   
-                }
-          }
-            var way=start/3+8;
-            xmlhttp.open("GET","http://localhost:8080/phpbin/index.php?way="+way+"t="+Math.random(),true);
-            xmlhttp.send();
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+           //alert(xmlhttp.responseText);
+           var str=xmlhttp.response;
+           //alert(str+"　"+start+" "+way);
+           var obj=eval('(' + str + ')');
+           for(var i=0;i<3;i++)
+           {
+                $('.zyxbuild2-dish-img').eq(start).attr('src','img/'+obj.dataList[i].food_id+'.jpg');
+                $('.zyxbuild2-dish-title').eq(start).html(obj.dataList[i].food_name+"<br>"+obj.dataList[i].price+"元");
+               // $('.zyxbuild2-dish-title').eq(start).html("<br>"+obj.dataList[i].price+"元<br><br>");
+                start++;
+           }
+        }
+    }
+    var way=start/3+8;
+    xmlhttp.open("GET","http://localhost:8080/phpbin/index.php?way="+way+"t="+Math.random(),true);
+    xmlhttp.send();
 }
 function Toloadbody()
 {
@@ -154,7 +147,6 @@ document.onscroll=function()
     {
         nav.className="zyx-nav-fix";
         $('.totop').show('fast');
-
     }
     else 
     {
@@ -167,7 +159,6 @@ $(document).ready(function(e) {
         dots: true
     }),
     data04 = unslider04.data('unslider');
-     
     $('.unslider-arrow04').click(function() {
         var fn = this.className.split(' ')[1];
         data04[fn]();
@@ -200,36 +191,34 @@ $('.zyx-nav-user').click(function(event) {
 $('.zyx-nav-userload').click(function(event) {
     var xmlhttp;
     if (window.XMLHttpRequest)
-          {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-          }
-          else
-          {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-        xmlhttp.onreadystatechange=function()
-          {
-              if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                   
-                   //alert(xmlhttp.responseText);
-                   if(xmlhttp.responseText=="destroy")
-                   {
-                        //alert("wwww");
-                        $('.words').html("登录");
-                        $('.words').attr('href','log.html'); 
-                        $('.zyx-nav-userload a').html("");
-                        $('.zyx-nav-userinf p').html("登陆更加美好");
-                        $('.zyx-nav-userlink').html("用户");
-                   }
-                   else
-                   {
-                        
-                   }
-                }
-          }
-            xmlhttp.open("GET","http://localhost:8080/phpbin/logout.php?",true);
-            xmlhttp.send();
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {//alert(xmlhttp.responseText);
+            if(xmlhttp.responseText=="destroy")
+            {
+                //alert("wwww");
+                $('.words').html("登录");
+                $('.words').attr('href','log.html');
+                $('.zyx-nav-userload a').html("");
+                $('.zyx-nav-userinf p').html("登陆更加美好");
+                $('.zyx-nav-userlink').html("用户");
+             }
+            else
+            {
+
+            }
+        }
+    }
+    xmlhttp.open("GET","http://localhost:8080/phpbin/logout.php?",true);
+    xmlhttp.send();
 });
  $.getScript('http://php.weather.sina.com.cn/iframe/index/w_cl.php?code=js&day=0&city=&dfc=1&charset=utf-8',function(a){
     var s="",r="",q="";for(s in window.SWther.w){
@@ -281,42 +270,41 @@ $('.zyx-nav-userload').click(function(event) {
  });
  $('.zyxbuild7-dish-img').click(function(event) {
    /* Act on the event */
-   var src=$(this).attr('src');
-   var des="html/";
-   var des=des+src.substring(4,9)+".html"
-   window.location.href=des; 
+       var src=$(this).attr('src');
+       var des="html/";
+       var des=des+src.substring(4,9)+".html"
+       window.location.href=des;
  });
  $('.zyxbuild2-dish-img').click(function(event) {
-   /* Act on the event */
-   var src=$(this).attr('src');
-   var des="html/";
-   var des=des+src.substring(4,9)+".html"
-   window.location.href=des; 
+       /* Act on the event */
+       var src=$(this).attr('src');
+       var des="html/";
+       var des=des+src.substring(4,9)+".html"
+       window.location.href=des;
  });
  $('.fa-shopping-cart').click(function(){
-    if($(this).hasClass("l-rotatel")){ 
-          $(this).removeClass("l-rotatel");
-          $(this).addClass("l-rotater");
-      }else{
-        $(this).removeClass("l-rotater");
-        $(this).addClass("l-rotatel");
-      }
-      var n=$('.fa-shopping-cart').index(this);
-    var str=$('.food-img').eq(n).attr('src');                       //alert(str+i);
-    str=str.substring(4,9);
-    Updatadb(1,str,-1,-1);
-    //alert(str);
+        if($(this).hasClass("l-rotatel")){
+              $(this).removeClass("l-rotatel");
+              $(this).addClass("l-rotater");
+        }else{
+            $(this).removeClass("l-rotater");
+            $(this).addClass("l-rotatel");
+        }
+         var n=$('.fa-shopping-cart').index(this);
+         var str=$('.food-img').eq(n).attr('src');                       //alert(str+i);
+        str=str.substring(4,9);
+        Updatadb(1,str,-1,-1);
+        //alert(str);
   });
  $('.l-fa-heart').click(function(){
-
     if($(this).hasClass('fa-heart-o')){
-      $(this).removeClass('fa-heart-o');      
+      $(this).removeClass('fa-heart-o');
         $(this).addClass('fa-heart');
-        $(this).css('color','#ff3232'); 
-        }else
-        {
-          $(this).removeClass('fa-heart');
-          $(this).addClass('fa-heart-o');     
-        $(this).css('color','black'); 
-        }
-  });
+        $(this).css('color','#ff3232');
+    }else
+    {
+        $(this).removeClass('fa-heart');
+        $(this).addClass('fa-heart-o');
+        $(this).css('color','black');
+    }
+ });
