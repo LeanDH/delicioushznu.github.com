@@ -72,8 +72,8 @@ $(document).ready(function() {
         box.remove();
         options.callback();
       });
-    }
-  });
+      }
+    });
 
     $('#btn1').on('click',function(){
       if($(this).find('.fa-thumbs-up').hasClass("changeColor"))

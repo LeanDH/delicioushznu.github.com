@@ -117,7 +117,6 @@ $('.animate-type').animatedHeadline({
     animationType: 'type'
 });
 
-
 $('#title-nav li').eq(3).addClass('b-active');
 $('#title-nav li').mouseenter(function(event) {
    $(this).addClass('b-active').siblings().removeClass('b-active');

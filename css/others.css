@@ -17,8 +17,7 @@ body {
     height: 100px;
     margin-bottom: -40px;
  }
-.b-title
-{
+.b-title {
     display: flex;
     position: fixed !important;
     left: 0;
@@ -27,28 +26,25 @@ body {
     height:60px;
     background:#fff;
     justify-content: center;
-    box-shadow:10px 0px 10px rgba(0,0,0,0.3);
+    box-shadow:10px 0 10px rgba(0,0,0,0.3);
     z-index:10;
 }
-.b-title ul
-{
+.b-title ul {
     height:60px;
-    margin:0px auto;
+    margin:0 auto;
 }
-.b-title ul li
-{
+.b-title ul li {
     display:inline-block;
     vertical-align:top;
     *display:inline;
     *zoom:1;
     height:60px;
 }
-.b-title ul li a.link
-{
+.b-title ul li a.link {
     display: inline-block;
     position: relative;
     height: 60px;
-    padding: 0px 24px;
+    padding: 0 24px;
     vertical-align: top;
     line-height: 60px;
     color: #444;
@@ -57,8 +53,7 @@ body {
     font-weight: bold;
     
 }
-.b-title ul li a.link strong
-{
+.b-title ul li a.link strong {
     display:inline-block;
     *display:inline;
     *zoom:1;
@@ -68,25 +63,21 @@ body {
     font-weight:bold;
     text-align: center;
 }
-.b-title ul li:hover
-{
+.b-title ul li:hover {
     cursor:pointer;
     background:#fafafa;
 }
-.b-current
-{
+.b-current {
     display: inline-block;
     height: 60px;
     vertical-align: top;
 }
-.b-title ul li.b-talk a strong
-{
+.b-title ul li.b-talk a strong {
     height:56px;
     overflow:hidden;
     border-bottom:4px solid #ff3232;
 }
-.canteen-box
-{
+.canteen-box {
     display: flex;
     left: 0;
     top: 0;
@@ -100,32 +91,30 @@ body {
     justify-content: center;
     transition: height 0.5s;
 }
-.canteen-box a
-{
+.canteen-box a {
     margin:5px;
     color: black;
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;
 }
-.canteen-box a:hover
-{
+.canteen-box a:hover {
     color: #EB3F2F;
     text-decoration: none;
 }
-.b-top{
+.b-top {
     height: 60px;
 }
 
 /**PART2: 本页的大标题**/
 .nav {
-    background: #fff;
     height: 120px;
+    margin-bottom: 30px;
+    padding-top: 0;
+    background: #fff;
     font-size: 15px;
     line-height: 40px;
     text-align: center;
-    margin-bottom: 30px;
-    padding-top: 0px;
 }
 
 /**PART3-1: 左侧的导航栏部分**/
@@ -140,9 +129,9 @@ body {
     list-style: none;
 }
 .fl_l li a {
+    display: block;
     border-bottom: 1px solid #eee;
     text-align: center;
-    display: block;
     color: #333;
     font-size: 14px;
     line-height: 60px;
@@ -156,9 +145,9 @@ body {
     color: #fff;
 }
 .fl_r li {
+    display: block;
     margin-bottom: 30px;
     background: #fff;
-    display: block;
 }
 
 
@@ -168,29 +157,29 @@ body {
     height: 100%;
 }
 .item1 {
-    height: 90%;
     position: relative;
+    height: 90%;
 }
 .item1-child:hover {
     border: 1px solid #ff4883;
 }
 .item1-child  {
-    background-color: #fff;
     height: 100%;
     margin: 2%;
     padding: 1%;
+    background-color: #fff;
 }
 .item1-child-address {
     display: none;
+    position: absolute;
     z-index: 1;
     width: 255px;
     height: 33px;
-    background-color: rgba(0,0,0,0.5);
     margin-top: 120px;
-    position: absolute;
+    padding-left: 10px;
+    background-color: rgba(0,0,0,0.5);
     font-size: 15px;
     line-height: 33px;
-    padding-left: 10px;
     color: #fff;
 }
 .item1-child-message {
@@ -220,11 +209,11 @@ body {
 div#splitter  {
     position: relative;
     overflow: hidden;
+    margin:auto;
     width: 800px; 
     background: #0057a7;
     font-family: Blue Highway, Arial, sans-serif;
     color: #fff; 
-    margin:auto;
     font-size: 0;
 }
 div#splitter img  {
@@ -234,10 +223,10 @@ div#splitter img  {
 }
 div#splitter span  {
     position: absolute; 
-    font-size: 16px;
     top: 150px; 
     left: 50px;
     right: 50px;
+    font-size: 16px;
 }    
 
 div#splitter img:nth-of-type(1)  {
@@ -266,9 +255,9 @@ div#splitter:hover img:nth-of-type(2)  {
 
 /**PART3-2-4: 周边外卖**/
 .ui-item4-address {
-    font-size: 12px;
     margin-left: 30px;
     padding-top: 15px;
+    font-size: 12px;
 }
 .ui-item4-address a:hover {
     color: #0093DF;
@@ -288,9 +277,9 @@ div#splitter:hover img:nth-of-type(2)  {
     flex-wrap: wrap;
 }
 .store {
+    display: flex;
     height: 140px;
     border-bottom: 1px solid #E6E6E6;
-    display: flex;
     cursor: pointer;
 }
 .store:hover {
@@ -315,13 +304,13 @@ div#splitter:hover img:nth-of-type(2)  {
     cursor: pointer;
 }
 .text1 {
+    display: block;
+    padding-left: 5px;
+    margin-bottom: -28px;
     font-size: 16px;
     line-height: 50px;
     font-weight: bold;
     color: #333;
-    padding-left: 5px;
-    display: block;
-    margin-bottom: -28px;
 }
 .text2 {
     padding-left: 5px;
@@ -330,10 +319,10 @@ div#splitter:hover img:nth-of-type(2)  {
     letter-spacing: -1px;
 }
 .text3 {
+    margin-left: 8px;
     font-size: 12px;
     line-height: 12px;
     color: #999999;
-    margin-left: 8px;
 }
 .text4 {
     font-size: 12px;
@@ -342,42 +331,42 @@ div#splitter:hover img:nth-of-type(2)  {
     padding-left: 5px;
 }
 .text5 {
-    text-align: center;
+    display: block;
     width: 18px;
     height: 18px;
+    margin-left: 5px;
+    margin-top: 8px;
     line-height: 18px;
     border-radius: 4px;
     border: 1px solid #999999;
     color: #999999;
+    text-align: center;
+}
+.text6 {
     display: block;
     margin-left: 5px;
     margin-top: 8px;
-}
-.text6 {
-    text-align: center;
     width: 18px;
     height: 18px;
+    text-align: center;
     line-height: 18px;
     border-radius: 4px;
     color: #ffffff;
-    display: block;
-    margin-left: 5px;
-    margin-top: 8px;
     background-color: #57A9FF;
 }
 .text7 {
     color: #cc0000;
 }
 .text8 {
-    text-align: center;
+    display: block;
     width: 18px;
     height: 18px;
+    margin-left: 5px;
+    margin-top: 8px;
+    text-align: center;
     line-height: 18px;
     border-radius: 4px;
     color: #ffffff;
-    display: block;
-    margin-left: 5px;
-    margin-top: 8px;
     background-color: #E75959;
 }
 .ui-li-left {
