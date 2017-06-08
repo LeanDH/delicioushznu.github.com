@@ -2,7 +2,7 @@
 .container-fluid {
     width: 100%;
     padding: 0;
-    margin:auto;
+    margin: auto;
 }
 .topnav {
     height: 100px;
@@ -13,33 +13,33 @@
     display: flex;
     position: fixed !important;
     left: 0;
-    top:0;
-    width:100%;
-    height:60px;
-    background:#fff;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
     justify-content: center;
-    box-shadow:10px 0px 10px rgba(0,0,0,0.3);
-    z-index:10;
+    box-shadow: 10px 0px 10px rgba(0,0,0,0.3);
+    z-index: 10;
 }
 .b-title ul
 {
-    height:60px;
-    margin:0px auto;
+    height: 60px;
+    margin: 0 auto;
 }
 .b-title ul li
 {
-    display:inline-block;
-    vertical-align:top;
-    *display:inline;
-    *zoom:1;
-    height:60px;
+    display: inline-block;
+    height: 60px;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
 }
 .b-title ul li a.link
 {
     display: inline-block;
     position: relative;
     height: 60px;
-    padding: 0px 24px;
+    padding: 0 24px;
     vertical-align: top;
     line-height: 60px;
     color: #444;
@@ -50,19 +50,19 @@
 }
 .b-title ul li a.link strong
 {
-    display:inline-block;
-    *display:inline;
-    *zoom:1;
-    width:60px;
-    height:60px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 60px;
+    height: 60px;
     vertical-align:top;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
 }
 .b-title ul li:hover
 {
-    cursor:pointer;
-    background:#fafafa;
+    cursor: pointer;
+    background: #fafafa;
 }
 .b-current
 {
@@ -72,9 +72,9 @@
 }
 .b-title ul li.b-talk a strong
 {
-    height:56px;
-    overflow:hidden;
-    border-bottom:4px solid #ff3232;
+    height: 56px;
+    border-bottom: 4px solid #ff3232;
+    overflow: hidden;
 }
 .canteen-box
 {
@@ -139,9 +139,8 @@
     height: 100%;
 }
 .title {
-    height: 100px;
-    /*border:1px solid #000;*/
     display: flex;
+    height: 100px;
     justify-content: space-around;
     align-items: center;
 }
@@ -150,7 +149,7 @@
     color: green;
     font-size: 5em;
     /*font-family: ´微软雅黑´;*/
-    font-family:"楷体",Georgia,Serif;
+    font-family: "楷体",Georgia,Serif;
     background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#FF6767), to(rgba(51, 51, 51, 0.5)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -158,7 +157,7 @@
 
 /*发布话题按钮*/
 .createnew {
-    width:100px;
+    width: 100px;
     height: 25px;
     font-size: 15px;
     color: #fff;
@@ -171,15 +170,15 @@
 
 /*一个评论元素，头像+评论+回复内容*/
 .element {
-    width: 100%;
     display: flex;
+    width: 100%;
     margin-top: 50px;
     justify-content: space-between;
 }
 .headimg {
+    display: flex;
     width: 100px;
     height: 100px;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items:center;
@@ -187,11 +186,9 @@
 .headimage {
     height: 70px;
     width: 70px;
-    /*border: 1px solid #000;*/
 }
 .message {
     width: 90%;
-    /*border:1px solid #000;*/
 }
 ul.pagination {
     display: inline-block;
@@ -203,52 +200,48 @@ ul.pagination {
     font-size: 20px;
 }
 .message-titleandtime {
-    width:80%;
     display: flex;
+    width: 80%;
     justify-content: space-between;
 }
 .talkmessage {
+    display: flex;
     height: 120px;
     width: 100%;
-    /*border:1px solid #000;*/
-    display: flex;
 }
 .self {
+    display: -webkit-box;
     width:100%;
-    /*border:1px solid #000;*/
-    /*border-radius:5px;*/
     height:100px;
     text-indent:15px;
-    display: -webkit-box;
     text-overflow: ellipsis;
     overflow: hidden;
-
     word-wrap: break-word;
     -webkit-box-orient: vertical;
 }
 .self:first-letter {
-    font-size:30px;
-    color:#ff0000;
-    float:left;
+    font-size: 30px;
+    color: #ff0000;
+    float: left;
 }
 .talkmessage_self {
-    width:80%;
+    width: 80%;
     height: 120px;
 }
 
 
 /*显示全部内容和收起*/
 .showallmes {
-    display:flex;
-    justify-content:flex-end;
+    display: flex;
+    justify-content: flex-end;
     text-decoration: underline;
     color: #2046C0;
     font-size: 15px;
     cursor: pointer;
 }
 .folder {
-    display:flex;
-    justify-content:flex-end;
+    display: flex;
+    justify-content: flex-end;
     text-decoration: underline;
     color: #2046C0;
     font-size: 15px;
@@ -258,48 +251,35 @@ ul.pagination {
 
 .othertalk>div, .self>p {
     margin-bottom: 0;
-    margin-left:5px;
-    margin-top:2px;
+    margin-left: 5px;
+    margin-top: 2px;
 }
 .other {
+    display: flex;
     width: 100%;
     height: 120px;
-    /*border:1px solid #000;*/
-    display: flex;
-    /*margin-top: 10px;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 .other-element {
-    width:80%;
+    width: 80%;
     height: 120px;
 }
-/*.othertalk {*/
-    /*width: 100%;*/
-    /*height: 100px;*/
-    /*!*border: 1px solid #000;*!*/
-    /*!*border-radius: 5px;*!*/
-/*}*/
 .other-element-talk {
-    width:100%;
-    /*border:1px solid #000;*/
-    /*border-radius:5px;*/
-    height:100px;
-
+    width: 100%;
+    height: 100px;
     text-overflow:ellipsis;
     -o-text-overflow:ellipsis;
     overflow: hidden;
 }
 .push {
+    display: flex;
     height: 100px;
     width: 20%;
-    display: flex;
     justify-content: center;
     align-items: center;
 
 }
 .pushbutton {
-    width:50px;
+    width: 50px;
     height: 25px;
     font-size: 15px;
     color: #fff;
@@ -310,9 +290,9 @@ ul.pagination {
     cursor: pointer;
 }
 .message-good {
+    display: flex;
     width: 20%;
     height: 100px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -344,8 +324,6 @@ ul.pagination {
     height: 80px;
     border:1px solid #000;
     font-size: 18px;
-    /*word-break:break-all;*/
-    /*overflow-x:scroll;*/
 }
 .part2-self,.part3-self {
     width: 75%;
@@ -368,7 +346,6 @@ ul.pagination {
     justify-content: flex-end;
 }
 .nobutton,.yesbutton,.part3nobutton, .part3yesbutton {
-    width:85px;
     height: 40px;
     font-size: 20px;
     color: #fff;
@@ -380,7 +357,7 @@ ul.pagination {
     cursor: pointer;
 }
 .username {
-    font-weight:bold;
+    font-weight: bold;
     font-size: 15px;
 }
 .onetalk {
@@ -388,12 +365,3 @@ ul.pagination {
     flex-direction: row;
 }
 
-
-/*.blur {*/
-    /*filter: url(blur.svg#blur); !* FireFox, Chrome, Opera *!*/
-    /*-webkit-filter: blur(5px); !* Chrome, Opera *!*/
-    /*-moz-filter: blur(5px);*/
-    /*-ms-filter: blur(5px);*/
-    /*filter: blur(5px);*/
-    /*filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); !* IE6~IE9 *!*/
-/*}*/
