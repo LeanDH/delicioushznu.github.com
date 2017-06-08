@@ -8,8 +8,8 @@
  .topnav {
     height: 100px;
     width:100%;
-    z-index: 100;
     margin-bottom: -65px;
+    z-index: 100;
  }
 .b-title
 {
@@ -42,7 +42,7 @@
     display: inline-block;
     position: relative;
     height: 60px;
-    padding: 0px 24px;
+    padding: 0 24px;
     vertical-align: top;
     line-height: 60px;
     color: #444;
@@ -119,8 +119,8 @@
 }
  .b-logo
  {
- 	height: 150px;
  	display: flex;
+ 	height: 150px;
  	align-items: center;
  }
  .b-logo img
@@ -136,7 +136,6 @@
  }
 .part1shopping
 {
-    /*height: 1000px;*/
     width:100%;
     position: absolute;
     z-index: 3;
@@ -157,7 +156,6 @@
 .b-title ul
 {
 	height:60px;
-/*	width:990px;*/
 	margin:0px auto;
 }
 .b-title ul li
@@ -205,12 +203,6 @@
     vertical-align: top;
     height: 60px;
 }
-/*.b-title ul li.b-current a strong
-{
-	border-bottom:4px solid #ff3232;
-	height:56px;
-	overflow:hidden;
-}*/
 .b-title ul li.b-shopping a strong
 {
 	border-bottom:4px solid #ff3232;
@@ -223,42 +215,39 @@
 }
 .b-contant-title
 {
-	/*text-align:center;*/
-	height: 25px;
 	display: flex;
-	align-items: center;
-    justify-content: center;
+	height: 25px;
 	border-bottom: 3px solid #a7cbff;
 	background-color: #FAFAFA;
+	align-items: center;
+    justify-content: center;
 }
 .b-contant-shopInfo
 {
-	padding-left:20px;
-	margin:5px 0 5px 0;
 	height:35px;
-	/*vertical-align:bottom;*/
+	margin:5px 0 5px 0;
+	padding-left:20px;
 }
 .goods
 {
 	padding: 0;
 	margin:0;
-	/*height: 500px;*/
 }
 .detail
 {
-	height: 100%;
 	display: flex;
+	height: 100%;
+	border-right:solid 1px #d1ecff;
 	align-items: center;
     justify-content: center;
 	background-color:white;
-	border-right:solid 1px #d1ecff;
 }
 .product
 {
 	height: 150px;
-	border:1px solid #d1ecff;
 	margin-right:-1px; 
 	margin-bottom:-1px;
+	border:1px solid #d1ecff;
 }
 .trash
 {
@@ -269,24 +258,24 @@
 #total:before
 {
 	content:'¥';
+	margin-right: 5px;
     line-height: 30px;
     font-size: 14px;
     font-weight: normal;
     color:#D20000;
-    margin-right: 5px;
 }
 .detail-delete
 {
-	height: 150px;
 	display: flex;
-	align-items: center;
-    justify-content: center;
-	background-color:white;
+	height: 150px;
+	margin-right:-1px; 
+	margin-top:-1px;
 	border-bottom:solid 1px #d1ecff;
 	border-top:solid 1px #d1ecff;
 	border-right:solid 1px #FFF;
-	margin-right:-1px; 
-	margin-top:-1px;
+	align-items: center;
+    justify-content: center;
+	background-color:white;
 }
 .b-contant-goods table tr
 {
@@ -294,11 +283,11 @@
 }
 .num_input
 {
-	text-align:center;
-	margin:20px;
 	width:20px;
 	height: 25px;
+	margin:20px;
 	border: 0;
+	text-align:center;
 	}
 .total-price
 {
@@ -310,13 +299,6 @@
 	width:100%;
 	height:100%;
 }
-/*.text-end
-{
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	align-content: flex-end;
-}*/
 .font-special-black
 {
 	font-weight: bold;
@@ -328,9 +310,6 @@
 	font-size: 16px;
 	color:red;
 }
-/*.product{
-	margin-bottom: 25px;
-}*/
 .b-bottom-f1
 {
 	height: 50px;
@@ -338,23 +317,19 @@
 .part2check
 {
 	display: none;
-
 }
 .b-bottom-commit
 {
-	/*width:80px;
-	height: 30px;
-	margin-bottom: 10px;*/
-	font-size: 15px;
 	color: white;
     font-weight: bold;
+    font-size: 15px;
 }
 .b-contant-up-main
 {
     position: relative;
-    z-index: 5;
     width:100%;
     height: 1000px;
+    z-index: 5;
 }
 .b-check-main
 {
@@ -363,31 +338,25 @@
 }
 .check-main-square
 {
-	/*width:500px;*/
-	height: 710px;
 	position: relative;
-	/*transform:translate(0,50%);*/
+	height: 710px;
 	border:2px solid #EB4545;
 	margin-top:50px;
-	/*margin:auto;*/
-	/*margin-left: 50%;*/
 }
 .receiver-msg
 {
 	display: flex;
-	align-items: center;
 	height: 80px;
-	color: black;
 	margin:5px 0 5px 5px;
+	color: black;
+	align-items: center;
 	border-bottom: 2px solid #EB4545;
 
 }
 .receiver-msg-add
 {
-	/*display: flex;*/
 	font-size: 14px;
 	font-weight: normal;
-
 }
 .receiver-msg-num
 {
@@ -414,10 +383,10 @@
 }
 .receiver-talk
 {
-	height: 50px;
 	display: flex;
-	align-items: center;
+	height: 50px;
 	border-bottom: 2px solid #EB4545;
+	align-items: center;
 }
 .receiver-talk-input
 {
@@ -439,8 +408,6 @@
     height: 22px;
     border:1px solid #000;
     font-size: 18px;
-    /*word-break:break-all;*/
-    /*overflow-x:scroll;*/
 }
 .goods-msg
 {
@@ -450,8 +417,8 @@
 }
 .goods-msg-single
 {
-	height: 30px;
 	display: flex;
+	height: 30px;
 	align-items: center;
 }
 .result-single-msg
@@ -482,24 +449,24 @@
 }
 .price-result-single
 {
-	height: 40px;
 	display: flex;
+	height: 40px;
 	align-items: center;
 }
 .pay-result
 {
 	display: flex;
-	align-items: center;
 	height: 58px;
+	align-items: center;
 }
 .price-total
 {
 	display: flex;
-	align-items: center;
 	height: 100%;
 	font-weight: normal;
 	font-size:15px;
 	color: #EB4545;
+	align-items: center;
 }
 .price-total:before
 {
@@ -507,13 +474,13 @@
 }
 .price-topay
 {
+	display: flex;
 	height: 100%;
-	background: #EB4545;
 	color: white;
+	background: #EB4545;
 	font-weight: bold;
 	font-size: 15px;
 	cursor: pointer;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 }
@@ -523,21 +490,21 @@
 }
 .b-next
 {
+	display: flex;
 	width:100%;
 	height: 30px;
 	margin-bottom: 10px;
-	display: flex;
+	cursor: pointer;
 	align-items: center;
     justify-content: center;
     background-color:#D20000;
-    cursor: pointer;
 }
 .right-arrow
 {
 	display: flex;
+	color: white;
 	align-items: center;
 	justify-content: center;
-	color: white;
 }
 .delete-all
 {
@@ -545,13 +512,12 @@
 }
 .part3confirm
 {
-	/*display: none;*/
+	position: absolute;  
+	top: 50%;   
+    left: 50%;    
 	width: 250px;
 	height: 200px;
 	border:1px solid #EB4545;
-	position: absolute;   
-    top: 50%;   
-    left: 50%;   
     -webkit-transform: translate(-50%, -50%);   
     -moz-transform: translate(-50%, -50%);   
     -ms-transform: translate(-50%, -50%);   
@@ -560,15 +526,15 @@
 }
 .confirm-title
 {
+	display: flex;
 	width:100%;
 	height: 25%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #EB4545;
 	color: white;
+	align-items: center;
 	font-size:16px;
 	font-weight: bold;
+	justify-content: center;
+	background: #EB4545;
 }
 .confirm-check
 {
@@ -580,13 +546,13 @@
 }
 .confirm-btn
 {
+	display: flex;
 	width:100%;
 	height: 25%;
-	display: flex;
+	color: white;
 	align-items: center;
 	justify-content: center;
 	background: #EB4545;
-	color: white;
 	font-size:16px;
 	font-weight: bold;
 	cursor:pointer;

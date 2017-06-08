@@ -112,17 +112,17 @@ body {
 }
 
 .l-logo {
+    display: flex;
+    position: relative;
     height: 300px;
     width: 100%;
-	font-size: 80px;
-    text-align: center;
 	color: green;
-	display: flex;
+	font-size: 80px;
+    font-family:'jdlibianjianb21eb005a1917d';
+    text-align: center;
 	flex-direction: column;
 	align-items: center;
     justify-content: flex-end;
-    position: relative;
-    font-family:'jdlibianjianb21eb005a1917d';
 }
 
 .l-bck {
@@ -132,43 +132,43 @@ body {
 }
 
 .l-choose {
+    display: flex;
+    position: relative;
 	height: 200px;
 	width: 100%;
-	display: flex;
 	justify-content: center;
-	position: relative;
 }
 
 .l-navbar {
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-    border-radius: 50%;
-    background: green;
-    margin: 70px auto;
-    cursor: pointer;
-    text-align: center;
-    font-size: 1.75em;
-    font-weight: bold;
-    color: #99b977;
-    transition: 0.24s 0.2s;
-    border: 1px solid #99b977;
     position: absolute;
     bottom: 0;
+    width: 150px;
+    height: 150px;
+    margin: 70px auto;
+    border: 1px solid #99b977;
+    border-radius: 50%;
+    color: #99b977;
+    background: green;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 150px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.24s 0.2s;
 }
 .l-navbar:hover {
     background: white;
 }
 .l-navbar .l-choose-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     position: absolute;
     top: -75px;
     left: -75px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
     border: 150px solid transparent;
     cursor: default;
-    border-radius: 50%;
+    list-style: none;
     transform: scale(0);
     transition: transform 1.4s 0.07s;
     z-index: -1;
@@ -189,14 +189,14 @@ body {
     transition: all 0.6s;
 }
 .l-navbar .l-choose-menu li a{
+    position: absolute;
     width: 50px;
     height: 50px;
-    line-height: 45px;
     border-radius: 50%;
-    background: green;
-    position: absolute;
-    font-size: 65%;
     color: #99b977;
+    background: green;
+    font-size: 65%;
+    line-height: 45px;
     transition: 0.6s;
 }
 .l-navbar:hover .l-choose-menu li:nth-child(1){
@@ -273,45 +273,45 @@ body {
 }
 
 .l-food-menu {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 .l-food-class {
+    display: flex;
     height: 1180px;
     width: 300px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     border:20px solid transparent;
     border-image:url("../img/border.jpg");
     border-image-repeat: stretch;
     border-image-slice:27 27 27 27;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 .l-class-word {
+    display: flex;
     height: 50px;
     font-size: 30px;
     font-weight: 600;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 .l-food-cnt {
-    width: 100%;
     display: flex;
+    width: 100%;
+    padding: 0 !important;
     flex-wrap: wrap;
 	justify-content: center;
-    padding: 0 !important;
 }
 
 .l-food-cnt li{
+    position: relative;
     width: 200px;
     height: 250px;
     margin-bottom: 20px;
     background-color: #fff;
-    position: relative;
 	overflow: hidden;
 }
 
@@ -319,9 +319,9 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #fff;
     width: 200px;
     height: 250px;
+    background-color: #fff;
 }
 
 .l-food-img-3d {
@@ -366,48 +366,40 @@ body {
 }
 
 .l-food-mask p{
-    font-size: 25px;
-    color: #fff;
     margin-top: 45px;
+    color: #fff;
+    font-size: 25px;
 }
 .l-food-mask a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    background-color: red;
-    width: 70px;
     display: block;
-    text-align: center;
+    width: 70px;
     height: 18px;
-    line-height: 18px;
     border-radius: 9px;
+    color: #fff;
+    background-color: red;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
 }
 .l-food-price {
+    display: flex;
 	width: 100%;
-    font-size: 18px;
 	color: white;
-	display: flex;
+	font-size: 18px;
 	align-items: center;
 	justify-content: center;
 }
 .l-fa {
-	color: white;
+    display: flex;
 	height: 80px;
 	width: 35%;
+    color: white;
 	font-size: 20px;
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	cursor: pointer;
 }
-
-
-
-/*.l-food-mask:hover {
-    opacity: 1;
-    transition: .3s linear;
-}*/
-
 .l-rotatel {
 	transition: .3s linear;
 	transform-origin:center center;
@@ -416,5 +408,5 @@ body {
 .l-rotater {
 	transition: .3s linear;
 	transform-origin:center center;
-     transform: rotate(0deg);
+    transform: rotate(0deg);
 }
