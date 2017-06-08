@@ -1,16 +1,10 @@
 body {
-	/*height: 1000px;*/
 	margin: 0;
 	padding: 0;
 	background-image: url(../img/bg0.png);
 	background-repeat: repeat;
-	/*background-attachment:;*/
-	/*overflow-y: scroll;*/
 }
-.main{
-	/*background: #d2f1de;*/
-	/*background: linear-gradient(#FFFFFF,#B2011E);*/
-	/*background: linear-gradient(#d3efe0,#e0f5f0);*/
+.main {
 	background-image: url(../img/bg2.jpg);
 	background-repeat: no-repeat;
 	background-position: -50px -100px;
@@ -21,8 +15,6 @@ div {
 .topbox {
 	width: 100%;
 	height: 605px;
-	/*background-color:  #FDFFDF;*/
-	/*background-color:  #FFFCF0;*/
 }
 .zyx-nav {
 	display: flex;
@@ -30,9 +22,6 @@ div {
 	flex-wrap: nowrap;
 	width:100%;
 	height: 60px;
-	/*background: #F17C67;*/
-	/*background: #EB3F2F;*/
-	/*background: #Ecf3f6;*/
 	cursor: pointer;
 }
 .zyx-nav-cnt {
