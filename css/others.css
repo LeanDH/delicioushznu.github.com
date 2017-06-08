@@ -20,7 +20,7 @@ body {
 .b-title
 {
     display: flex;
-    position: fixed !important;
+    /*position: fixed !important;*/
     left: 0;
     top:0;
     width:100%;
@@ -28,7 +28,7 @@ body {
     background:#fff;
     justify-content: center;
     box-shadow:10px 0px 10px rgba(0,0,0,0.3);
-    z-index:10;
+    z-index:1;
 }
 .b-title ul
 {
@@ -61,7 +61,7 @@ body {
 {
     display:inline-block;
     *display:inline;
-    *zoom:1;
+    /**zoom:1;*/
     width:60px;
     height:60px;
     vertical-align:top;
@@ -88,8 +88,8 @@ body {
 .canteen-box
 {
     display: flex;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     width: 100px;
     height: 200px;
     margin-left: 4px;
@@ -122,7 +122,7 @@ body {
     line-height: 40px;
     text-align: center;
     margin-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 /**PART3-1: 左侧的导航栏部分**/

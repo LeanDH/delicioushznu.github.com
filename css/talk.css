@@ -228,7 +228,7 @@ ul.pagination {
 
 
 /*显示全部内容和收起*/
-.showallmes {
+.showallmes, .folder {
     display: flex;
     justify-content: flex-end;
     text-decoration: underline;
